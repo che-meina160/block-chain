@@ -1,0 +1,105 @@
+@charset "utf-8";
+// ======================================================================
+//
+// 【ミックスイン名】 img-replacement-sprite
+//
+// 【呼び出し】
+//  - spriteの設定（指定のフォルダに画像がないとエラーになります）
+//   $spr_xxx: sprite-map("__your__spriteimg__dir/*.png");
+//   $spr_xxx_img: sprite-url($spr_xxx);
+//
+//  - 記述方法（※は必須。それ以外は必要に応じて）
+//   .m-xxx {
+//     @include img-replacement-sprite(
+//       $spr_xxx, // sprite-map名※
+//       $spr_xxx_img, // sprite-url名※
+//       XXXXXX, // スライスした画像名※
+//       bgnorepeat_true, // background-repeat: no-repeat;を指定できます [bgnorepeat_true:指定, bgnorepeat_false:指定しない]
+//       display_false, // displayの指定ができます［display_inline-block, display_block, display_false］
+//       false, // marginを0 0 0 0 の形で指定できます
+//       valign_false, // valignの指定ができます［valign_top, valign_middle, valign_bottom, valign_false］
+//       text_true, // 領域内のテキスト置換の有無を設定します［text_true:置換する, text_false:置換しない］
+//       width_true, // 領域の横幅の出力方法を設定します［width_true:自動出力, width_false:出力しない］
+//       height_true // 領域の縦幅の出力方法を設定します［height_true:自動出力, height_false:出力しない］
+//     );
+//   }
+//   ▼簡略化したもの
+//   @include img-replacement-sprite($spr_btn,$spr_btn_img,XXXXXX,false,false,false,false,text_true,width_true,height_true);
+//                                   ↑sprite-map名       ↑画像名  　　　　　　　　　　 ↑テキスト置換 ↑横幅出力 ↑高さ出力
+//　 ※:hover時に画像を2度読み込みしない（画像ポジションだけ出力）
+//   @include img-replacement-sprite($spr_btn,false,XXXXXX,false,false,false,false,text_false,width_false,height_false);
+//                                   　　　　↑urlをfalse 　 　　　　　　　　　　 ↑置換なし ↑横幅出力なし ↑高さ出力なし
+// 【機能】 CSSスプライト（PC用）
+//  * img-replacement.scssをincludeしています
+//
+// 【製作者】n.umeyama
+//
+// 【最終更新者】y.hatano
+//
+// ======================================================================
+
+@mixin img-replacement-sprite(
+  $map: false,
+  $bg-url: false,
+  $name: false,
+  $bg-norepeat: bgnorepeat_true,
+  $display: display_false,
+  $margin: false,
+  $valign: valign_false,
+  $text-hide: text_true,
+  $width: width_true,
+  $height: height_true
+) {
+
+  // 画像URL
+  @if $bg-url {
+    background-image: $bg-url;
+  }
+
+  // 画像のリピート
+  @if $bg-norepeat == bgnorepeat_true {
+    background-repeat: no-repeat;
+  }
+
+  // display 設定
+  @if $display == display_inline-block {
+    display: inline-block;
+  } @else if $display == display_block {
+    display: block;
+  }
+
+  // margin 設定
+  @if $margin {
+    margin: unquote($margin);
+  }
+
+  // valign設定
+  @if $valign == valign_top {
+    vertical-align: top;
+  } @elseif $valign == valign_middle {
+    vertical-align: middle;
+  } @elseif $valign == valign_bottom {
+    vertical-align: bottom;
+  }
+
+  // 領域内のテキストを非表示にする場合
+  @if $text-hide == text_true{
+    @include img-replacement();
+  }
+
+  // コンテンツ領域の横幅指定が必要な場合
+  @if $width == width_true {
+    width: image-width( sprite-file($map, $name) );
+  }
+
+  // コンテンツ領域の高さ指定が必要な場合
+  @if $height == height_true {
+    height: image-height( sprite-file($map, $name) );
+  }
+
+  // background-position を計算して出力
+  @if $map and $name {
+    background-position: sprite-position($map, $name);
+  }
+
+}

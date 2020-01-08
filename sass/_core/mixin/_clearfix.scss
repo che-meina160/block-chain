@@ -1,0 +1,43 @@
+@charset "utf-8";
+// ======================================================================
+//
+// 【ミックスイン名】 clearfix
+//
+// 【呼び出し】
+//  @include clearfix;
+//  @extend .cf;
+//
+// 【機能】
+//  - floatの解除 ※micro clearfix（IE8以降対応）
+//
+// 【参考】
+//  http://kojika17.com/2013/06/clearfix-2013.html
+//
+// 【製作者】n.umeyama
+//
+// 【最終更新者】y.hatano
+//
+// ======================================================================
+
+$clearfix: false !default;
+@mixin clearfix() {
+  @if $clearfix {}
+  @else {
+    $clearfix: true;
+    
+    /*----------------------------------------
+     micro clearfix
+    ----------------------------------------*/
+    .cf:before,
+    .cf:after {
+        content:"";
+        display:table;
+    }
+     
+    .cf:after {
+        clear:both;
+    }
+
+  }
+}
+

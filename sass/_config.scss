@@ -1,0 +1,276 @@
+@charset "utf-8";
+// ======================================================================
+//
+// 【ファイル名】 _config.scss
+//
+// 【このファイルについて】
+//  - cssのリセット・フォントの指定など、初期設定を変更するためのファイルです
+//  - デフォルトの設定は、ハンゲーム内コンテンツ用となっています
+//
+// 【もくじ】
+//    1. リセットcssを指定
+//
+//    2. Style指定
+//      2-1. fontの単位を指定 [px / percent]
+//      2-2. font-size 指定 [ 12px～16px ]
+//      2-3. font-family 設定
+//      2-4. color 設定
+//      2-5. lineheight 設定
+//      2-6. その他 設定
+//
+//    3. その他サイト初期セットの設定
+//      3-1. clearfixクラスを出力
+//      3-2. margin／padding スペースクラスを出力
+//      3-3. サイト制作支援用 シングルプロパティを出力
+//
+//    4. Compass の @include の設定
+//
+// 【製作者】n.umeyama
+//
+// 【最終更新者】y.hatano
+//
+// ======================================================================
+
+
+// ======================================================================
+// 1. リセットcssを指定
+// ======================================================================
+// 1-1. リセットcssを使用する場合、trueを指定してください
+//  - [true]
+//    説明： NHN オリジナル リセットCSSを出力します
+//          【2. Style設定】をすべてtrueにすると、common.css と同等のリセットcssになります
+//           ※初期値をすべてfalseにしても、リセットcssとして利用できます
+//           必要に応じてプロジェクトごとのcssに各種指定を追加してください
+//  - [false]
+//    説明： http://static.hangame.co.jp/r02/common/css/base.css や 
+//           http://static.hangame.co.jp/r02/common/r02/css/common.css を使用する場合、
+//           上記cssがリセットCSSの役目を果たしているので、false を選択します
+//           ※【2. Style設定】で各種設定を上書きできます
+// ----------------------------------------------------------------------
+
+$cssreset : true;
+// $cssreset : false;
+
+
+// ======================================================================
+// 2. Style設定
+// ======================================================================
+// 2-1. fontの単位を指定 [px / percent]
+//  - px指定 か %(percent) を選択してください
+//  - %(percent) を選択したときにフォント一覧表を出力する場合は $configFontTable を true にしてください
+//   （px % の変換表がCSSの最上部に挿入されます）
+// ----------------------------------------------------------------------
+
+// [単位指定]
+$fontSizeType : px;
+// $fontSizeType : percent;
+
+// [フォント一覧表出力設定]
+// $configFontTable: true;
+$configFontTable: false;
+
+// ----------------------------------------------------------------------
+// 2-2. font-size 指定 [ 12px～16px ]
+//  - body, button, input, select, textarea に指定するデフォルトの font-size です。
+//  - _fz.scss / _fs.scssを使用すると、入力したpx値に対応する％指定の値が返却されます。
+// 【呼び出し例】font-size: fz(10);
+// ----------------------------------------------------------------------
+
+$fontSizeDef : 12px;
+// $fontSizeDef : 13px;
+// $fontSizeDef : 14px;
+// $fontSizeDef : 15px;
+// $fontSizeDef : 16px;
+
+// ----------------------------------------------------------------------
+// 2-3. font-family 設定
+// ----------------------------------------------------------------------
+
+$fontFamily : "メイリオ",Meiryo,"ＭＳ Ｐゴシック","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",sans-serif;
+
+// ----------------------------------------------------------------------
+// 2-4. color 設定
+// - 基本のテキスト色・リンク色等の色を設定してください（指定のない場合はそのままで）
+//   ※初期値はハンゲームcommon.cssの設定になっています
+// ----------------------------------------------------------------------
+
+// [テキスト色]
+$fontColor : #666;
+
+// [リンク色]
+$link : #676767;
+$visited : #676767;
+$hover : #676767;
+$active : #676767;
+
+// ----------------------------------------------------------------------
+// 2-5. lineheight 設定
+// - デザインにあわせてデフォルトの lineheight を設定してください
+//   ※初期値はハンゲームcommon.cssの設定になっています
+// ----------------------------------------------------------------------
+
+$lineHeight: 1.333;
+
+// ----------------------------------------------------------------------
+// 2-6. その他 設定
+//   ※初期値は必要最低限の指定のみ true にしています。必要に応じて false と true を変更してください）
+// ----------------------------------------------------------------------
+
+// [スクロールバーを常に表示] htmlに overflow-y:scroll; を付加します
+$configAllwaysScrollbar: true;
+
+// [a] aタグに以下の設定を追加できます
+$config_a: true;
+  $a_text-decoration: none;
+
+// [a:hover, a:active] a:hover, a:activeに以下の設定を追加できます
+$config_a02: true;
+  $a02_text-decoration: underline;
+  $a02_outline: 0;
+
+// [textarea] textareaに以下の設定を指定できます
+$config_textarea: false;
+  $textarea_margin: 0;
+  $textarea_padding: 4px 0;
+  $textarea_bg: #fff; //背景色
+  $textarea_border: 1px solid #c6c6c6; //border指定
+  $textarea_overflow: auto;
+  $textarea_valign: top;
+
+// [th, td] th, tdに以下の設定を指定できます
+$config_thtd: false;
+  $thtd_padding: 0;
+  $thtd_align: left;
+  $thtd_valign: middle;
+
+// [form] input, select, textareaに以下の設定を指定できます
+$config_form: false;
+  $form_margin: 0;
+  $form_padding: 0;
+  $form_color: #666;
+  $form_family: $fontFamily;
+  $form_size: $fontSizeDef;
+  $form_vertical-align: middle;
+
+// [form02] input[type="button"], input[type="reset"], input[type="submit"] に以下の設定を指定できます
+$config_form02: false;
+  $form_cursor: pointer;
+
+// [form_button] button に以下の設定を指定できます
+$config_form_button: false;
+  $form_button_margin: 0;
+  $form_button_padding: 1px 6px;
+  $form_button_color: #666;
+  $form_button_family: $fontFamily;
+  $form_button_size: $fontSizeDef;
+  $form_button_vertical-align: middle;
+  $form_button_cursor: pointer;
+
+// [ins] 以下の設定を指定できます
+$config_ins: false;
+  $ins_bgColor : #ff9; //背景色
+  $ins_color : #000; //文字色
+	$ins_text : none; //text-decoration
+
+// [mark] 以下の設定を指定できます
+$config_mark: false;
+  $mark_bgColor : #ff0; //背景色
+  $mark_color : #000; //文字色
+  $mark_style : italic; //font-style
+  $mark_weight: bold; //font-weight
+
+// [em] 以下の設定を指定できます
+$config_em: true;
+  $em_style: normal; //font-style
+
+// [small] 以下の設定を指定できます
+$config_small: false;
+  $small_size: 75%; //font-size
+
+// [sub] 以下の設定を指定できます
+$config_sub: false;
+  $sub_position: relative;
+  $sub_line-height: 0;
+  $sub_size: 75%; //font-size
+  $sub_btm: -0.25em; //bottom位置
+
+// [sup] 以下の設定を指定できます
+$config_sup: false;
+  $sup_position: relative;
+  $sup_line-height: 0;
+  $sup_size: 75%; //font-size
+  $sup_top: -0.5em; //top位置
+
+// [hr] 以下の設定を指定できます
+$config_hr: false;
+  $hr_height: 1px; //高さ
+  $hr_border: 1px solid #cccccc; //border指定
+  $hr_margin: 1em auto;
+
+
+
+// ======================================================================
+// 3. サイト初期セットの追加設定
+// - 必要に応じて切り替えてください
+// ======================================================================
+// 3-1. clearfixクラスを出力（_core/mixin/_clearfix.scss）
+// - リセットCSSの後に micro clearfix（.cf） を出力します※ie8以降用
+// ----------------------------------------------------------------------
+
+// $configClearfix: true;
+$configClearfix:  false;
+
+// ----------------------------------------------------------------------
+// 3-2. margin／padding スペースクラスを出力（_core/mixin/_spacing.scss）
+// - 0-100 まで好きな数字を指定できます。
+// ----------------------------------------------------------------------
+
+// $configSpacing:0,5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100;
+// $configSpacing: 0,1,2,3,4,5,6,7,8,9,10,12,13,14,15,16,17,18,19,20,23,24,25,27,28,30,33,35,37,38,40,45,50,55,60,65,70,75,79,80,81,85,90,95,100;
+$configSpacing: false;
+
+// ----------------------------------------------------------------------
+// 3-3. サイト制作支援用 シングルプロパティを出力（_core/mixin/_single-property.scss）
+// - 各種シングルプロパティを出力します
+// ----------------------------------------------------------------------
+
+// $configSinglePropaty: true;
+$configSinglePropaty: false;
+
+
+
+// ======================================================================
+// 4. Compass の @include の設定
+// - プロパティにベンダープレフィックスをどこまでつけるか、
+//   また、対象ブラウザ用の独自スタイル処理を付加するか設定します
+// ======================================================================
+// [参考URL]
+// http://howtohp.com/css/compass-control-prefix.html
+// http://met.hanatoweb.jp/archives/351/
+// ----------------------------------------------------------------------
+
+
+// IE6 [初期値:false]
+$legacy-support-for-ie6 : false;
+// IE7 [初期値:false]
+$legacy-support-for-ie7 : false;
+// IE8 [初期値:true]
+$legacy-support-for-ie8 : false;
+// webkit [初期値:true]
+$experimental-support-for-webkit: true;
+// Mozilla  [初期値:true]
+$experimental-support-for-mozilla: true;
+// Firefox 3.6以前対応 [初期値:true]
+$legacy-support-for-mozilla: true;
+// Opera [初期値:true]
+$experimental-support-for-opera: true;
+// Microsoft [初期値:true]
+$experimental-support-for-microsoft: true;
+// KHTML [初期値:false]
+$experimental-support-for-khtml: false;
+// WebKitグラデ[初期値:true]
+$support-for-original-webkit-gradients: true;
+// SVG [初期値:true]
+$experimental-support-for-svg: true;
+// CSS PIE[初期値:false]
+$experimental-support-for-pie: false;

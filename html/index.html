@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>blockchain-lab</title>
+  <link rel="stylesheet" href="../css/main.v01.css">
+  <link rel="stylesheet" href="../css/slick/slick-theme.css">
+  <link rel="stylesheet" href="../css/slick/slick.css">
+  <link rel="stylesheet" href="../css/plugin.number.css">
+
+  <script src="../js/jquery-1.12.4.min.js"></script>
+  <script src="../js/plugin-number.js"></script>
+  <script src="../js/slick/slick.js"></script>
+  <script src="../js/blockchain-lab.js"></script>
+</head>
+
+<body>
+  <div id="wrapper">
+    <header id="header"></header>
+    <script>
+      $("#header").load("common_header.html");
+    </script>
+    <main>
+      <div class="main_content">
+        <div class="banner_area">
+          <div class="game_banner">
+            <div class="left_pic">
+              <div class="ss"></div>
+              <div class="banner-con">
+                <img src="../img/img-banner-01.png" alt="">
+                <p class="banner_tit">Ranking Tournament</p>
+                <p class="banner_point">480 PEBL</p>
+                <p class="banner_comp">Sponsored by ZeptoLab</p>
+                <a href="" class="text-join">
+                  <span class="txt">
+                    <i>Entry Fee</i>
+                    <em>20 PEBL</em>
+                  </span>
+                  <span class="join_btn">JOIN</span>
+                </a>
+                <p class="txt-prize">TOP PRIZE</p>
+              </div>
+            </div>
+            <div class="right_pic">
+              <div class="slick_top01">
+                <div class="banner-pic-ares" style="background-image: url(../img/img_game_02.png)">
+                  <div class="ss"></div>
+                  <div class="banner-con">
+                    <img src="../img/img-banner-02.png" alt="" class="pic-logo">
+                    <p class="pic-text">PvP Match</p>
+                    <p class="text-pebl">320 PEBL</p>
+                    <p class="text-company">Sponsored by Epic Games</p>
+                    <a href="#" class="text-join">
+                      <span class="txt">
+                        <i>Entry Fee</i>
+                        <em>30 PEBL</em>
+                      </span>
+                      <span class="btn">JOIN</span>
+                    </a>
+                    <p class="text-prize part-1">TOP PRIZE</p>
+                  </div>
+                </div>
+                <div class="banner-pic-ares" style="background-image: url(../img/img_game_03.png)">
+                  <div class="ss"></div>
+                  <div class="banner-con">
+                    <img src="../img/img-banner-03.png" alt="" class="pic-logo">
+                    <p class="pic-text">PvP Match</p>
+                    <p class="text-pebl">340 PEBL</p>
+                    <p class="text-company">Sponsored by ROVIO</p>
+                    <a href="#" class="text-join">
+                      <span class="txt">
+                        <i>Entry Fee</i>
+                        <em>26 PEBL</em>
+                      </span>
+                      <span class="btn">JOIN</span>
+                    </a>
+                    <p class="text-prize part-2">TOP PRIZE</p>
+                  </div>
+                </div>
+                <div class="banner-pic-ares" style="background-image: url(../img/img_game_04.png)">
+                  <div class="ss"></div>
+                  <div class="banner-con">
+                    <img src="../img/img-banner-04.png" alt="" class="pic-logo">
+                    <p class="pic-text">PvP Match</p>
+                    <p class="text-pebl">420 PEBL</p>
+                    <p class="text-company">Sponsored by Supercell</p>
+                    <a href="#" class="text-join">
+                      <span class="txt">
+                        <i>Entry Fee</i>
+                        <em>35 PEBL</em>
+                      </span>
+                      <span class="btn">JOIN</span>
+                    </a>
+                    <p class="text-prize  part-3">TOP PRIZE</p>
+                  </div>
+                </div>
+              </div>
+              <div class="pic-number">
+                <p class="number-txt"><span class="active">1</span><span>/</span> <span class="total_num"> 8 </span></p>
+                <p class="par"><span style="width: 50px;"></span></p>
+                <ul class="btnArea">
+                  <li><a href="#"><img src="../img/btn_banner_prev.png" alt=""></a></li>
+                  <li><a href="#"><img src="../img/btn_banner_next.png" alt=""></a></li>
+                </ul>
+              </div>
+
+              <script>
+                $(document).on('ready', function () {
+                  $(".slick_top01").slick({
+                    dots: false,
+                    infinite: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 3000,
+                    speed: 800,
+                    // fade: true,
+                  });
+                  $('.slick_top01').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+                    $('.number-txt .active')[0].innerText = nextSlide + 1;
+                    // $('.pic-number .par').find('span')[0].style.width = 20 * (nextSlide + 1) + '%'
+                    $('.pic-number .par').find('span').stop(true).animate({
+                      width: '0%'
+                    }, 0)
+                    $('.pic-number .par').find('span').animate({
+                      width: '100%'
+                    }, 3800)
+                  })
+                  $('.pic-number .par').find('span').animate({
+                    width: '100%'
+                  }, 3000)
+                  $('.banner-pic-m .slick-next.slick-arrow').on('click', function () {
+                    $('.pic-number .par').find('span').stop().animate({
+                      width: '0%'
+                    }, 0)
+                    $('.pic-number .par').find('span').stop().animate({
+                      width: '100%'
+                    }, 3800)
+                  })
+                  $('.banner-pic-m .slick-prev.slick-arrow').on('click', function () {
+                    $('.pic-number .par').find('span').stop(true).animate({
+                      width: '0%'
+                    }, 0)
+                    $('.pic-number .par').find('span').stop().animate({
+                      width: '100%'
+                    }, 3800)
+
+                  })
+                  $('.number-txt .total_num').html($('.slick-list .slick-cloned').length - 1)
+
+
+                  var em1 = $('#_cntdwn1');
+                  var nm1 = 66190;
+                  em1.numberAnimate({
+                    num: nm1,
+                    speed: 1000,
+                    symbol: ','
+                  });
+                  setInterval(function () {
+                    nm1 += 158;
+                    em1.resetData(nm1);
+                  }, 5000);
+
+                  var em2 = $('#_cntdwn2');
+                  var nm2 = 2317080;
+                  em2.numberAnimate({
+                    num: nm2,
+                    speed: 1000,
+                    symbol: ','
+                  });
+                  setInterval(function () {
+                    nm2 += 158;
+                    em2.resetData(nm2);
+                  }, 5000);
+                })
+              </script>
+
+            </div>
+          </div>
+          <div class="user_info">
+            <div class="info_contain">
+              <div class="info_l">
+                <p class="user_pic">
+                  <img src="../img/img_arena.png" alt="">
+                </p>
+                <p class="user_now">Now</p>
+                <div class="count_down">123456</div>
+                <p class="user_now">Matches available</p>
+              </div>
+              <div class="info_r">
+                <p class="user_pic">
+                  <img src="../img/img_diamonds.png" alt="">
+                </p>
+                <p class="user_now">Total Prize</p>
+                <div class="count_down">123456</div>
+                <p class="user_now">PEBL</p>
+              </div>
+            </div>
+            <div class="winners">
+              <p class="prize_tit">Prize Winners</p>
+              <ul class="clearFix">
+                <li>
+                  <dl>
+                    <dt><a><img src="../img/user.jpg" alt=""></a></dt>
+                    <dd><img src="../img/icon_balance.png">80 PEBL</dd>
+                  </dl>
+                  <p>12 minutes ago</p>
+                </li>
+                <li>
+                  <dl>
+                    <dt><a><img src="../img/user.jpg" alt=""></a></dt>
+                    <dd><img src="../img/icon_balance.png">80 PEBL</dd>
+                  </dl>
+                  <p>12 minutes ago</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="recently_played bg01">
+          <h2>Recently Played</h2>
+          <div class="game_img">
+            <img src="../img/img-recently-game-01.png" alt="">
+          </div>
+          <div class="game_img">
+            <img src="../img/img-recently-game-02.png" alt="">
+          </div>
+          <div class="game_img">
+            <img src="../img/img-recently-game-03.png" alt="">
+          </div>
+          <div class="game_img">
+            <img src="../img/img-recently-game-04.png" alt="">
+          </div>
+          <div class="nav_list">
+            <ul class="menu_nav">
+              <li class="on"><a href="">Cube Blits</a></li>
+              <li><a href="">Bacarrat</a></li>
+              <li><a href="">Angry Birds</a></li>
+              <li><a href="">Clash Royale</a></li>
+            </ul>
+            <ul class="top_btn">
+              <li>
+                <div class="bx_select">
+                  <!--加on 显示下拉框-->
+                  <div class="txt_select">
+                    <a class="select_vle">PRIZE</a>
+                    <span class="ico_arrow">목록 열기</span>
+                  </div>
+                  <ul class="select_content">
+                    <li><a href="">ALL</a></li>
+                    <li><a href="">FREE</a></li>
+                    <li><a href="">PAID</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="" class="see_all">SEE ALL</a>
+              </li>
+            </ul>
+          </div>
+          <ul class="list_con game_list">
+            <li>
+              <a href="">
+                <div class="game_list_head" style="background-image:url('../img/img_gametype-01.png')"></div>
+                <div class="game_list_main">
+                  <span>2 Player</span>
+                  <p>PvP Match</p>
+                  <div class="price">
+                    <span>800</span>PEBL
+                  </div>
+                  <div class="foot">
+                    <p class="entry">ENTRY FEE<span>20 PEBL</span></p>
+                    <p class="normal">Normal</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <div class="game_list_head" style="background-image:url('../img/img_gametype-02.png')"></div>
+                <div class="game_list_main">
+                  <span>2 Player</span>
+                  <p>Tournament</p>
+                  <div class="price">
+                    <span>800</span>PEBL
+                  </div>
+                  <div class="foot">
+                    <p class="entry">ENTRY FEE<span>20 PEBL</span></p>
+                    <p class="normal">Normal</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <div class="game_list_head" style="background-image:url('../img/img_gametype-03.png')"></div>
+                <div class="game_list_main">
+                  <span>2 Player</span>
+                  <p>Ranking Tournament Match</p>
+                  <div class="price">
+                    <span>800</span>PEBL
+                  </div>
+                  <div class="foot">
+                    <p class="entry">ENTRY FEE<span>20 PEBL</span></p>
+                    <p class="normal">Normal</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <div class="game_list_head" style="background-image:url('../img/img_gametype-04.png')"></div>
+                <div class="game_list_main">
+                  <span>2 Player</span>
+                  <p>PvP Match</p>
+                  <div class="price">
+                    <span>800</span>PEBL
+                  </div>
+                  <div class="foot">
+                    <p class="entry">ENTRY FEE<span>20 PEBL</span></p>
+                    <p class="normal">Normal</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <div class="game_list_head" style="background-image:url('../img/img_gametype-05.png')"></div>
+                <div class="game_list_main">
+                  <span>2 Player</span>
+                  <p>Ranking Tournament Match</p>
+                  <div class="price">
+                    <span>800</span>PEBL
+                  </div>
+                  <div class="foot">
+                    <p class="entry">ENTRY FEE<span>20 PEBL</span></p>
+                    <p class="normal">Normal</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="secret">
+              <a href="">
+                <span class="btn_qa">?</span>
+                <div class="game_list_main">
+                  <p>How to win big Prize in Pebble Arena?</p>
+                  <div class="foot">
+                    <p>Read secrets</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="top_arena_game">
+          <div class="game_tit">
+            <h2>Top Arena Game</h2>
+            <a href="" class="see_all">SEE ALL</a>
+          </div>
+          <ul class="list_con">
+            <li>
+              <div class="game_top" style="background-image: url('../img/img-topgame-01.png');">
+                <div class="ss"></div>
+                <p>APP</p>
+                <h3>Brawl Stars</h3>
+              </div>
+              <div class="game_contain">
+                <span>215</span>
+                <p>Total Matches</p>
+                <a href="">Find out more matche</a>
+              </div>
+            </li>
+            <li>
+              <div class="game_top" style="background-image: url('../img/img-topgame-02.png');">
+                <p>APP</p>
+                <h3>Brawl Stars</h3>
+              </div>
+              <div class="game_contain">
+                <span>215</span>
+                <p>Total Matches</p>
+                <a href="">Find out more matche</a>
+              </div>
+            </li>
+            <li>
+              <div class="game_top" style="background-image: url('../img/img-topgame-03.png');">
+                <p>APP</p>
+                <h3>Brawl Stars</h3>
+              </div>
+              <div class="game_contain">
+                <span>215</span>
+                <p>Total Matches</p>
+                <a href="">Find out more matche</a>
+              </div>
+            </li>
+            <li>
+              <div class="game_top" style="background-image: url('../img/img-topgame-04.png');">
+                <p>APP</p>
+                <h3>Brawl Stars</h3>
+              </div>
+              <div class="game_contain">
+                <span>215</span>
+                <p>Total Matches</p>
+                <a href="">Find out more matche</a>
+              </div>
+            </li>
+            <li>
+              <div class="game_top" style="background-image: url('../img/img-topgame-05.png');">
+                <p>APP</p>
+                <h3>Brawl Stars</h3>
+              </div>
+              <div class="game_contain">
+                <span>215</span>
+                <p>Total Matches</p>
+                <a href="">Find out more matche</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="best_app">
+          <div class="game_tit">
+            <h2>Best App of Week</h2>
+            <ul class="top_btn">
+              <li>
+                <a href="" class="arrow arrow_l"><img src="../img/btn_prev.png" alt=""></a>
+                <a href="" class="arrow arrow_r"><img src="../img/btn_next.png" alt=""></a>
+              </li>
+              <li>
+                <a href="" class="see_all">SEE ALL</a>
+              </li>
+            </ul>
+          </div>
+          <ul class="list_con">
+            <li>
+              <div class="game_pic"><img src="../img/img-bestapp-01.png" alt=""></div>
+              <h3>Cube Cube</h3>
+              <p>by Tether Studios</p>
+              <div class="phone_model">
+                <a href="">iOS</a>
+                <a href="">Andriod</a>
+              </div>
+            </li>
+            <li>
+              <div class="game_pic"><img src="../img/img-bestapp-02.png" alt=""></div>
+              <h3>Pro Pool-Ultimndsfa</h3>
+              <p>by Coeus Creative</p>
+              <div class="phone_model">
+                <a href="">iOS</a>
+                <a href="">Andriod</a>
+              </div>
+            </li>
+            <li>
+              <div class="game_pic"><img src="../img/img-bestapp-03.png" alt=""></div>
+              <h3>Diamond Blitz</h3>
+              <p>by Free Addicting Games</p>
+              <div class="phone_model">
+                <a href="">iOS</a>
+              </div>
+            </li>
+            <li>
+              <div class="game_pic"><img src="../img/img-bestapp-04.png" alt=""></div>
+              <h3>Color Bunmp 3D</h3>
+              <p>by Good Job Games</p>
+              <div class="phone_model">
+                <a href="">iOS</a>
+                <a href="">Andriod</a>
+              </div>
+            </li>
+            <li>
+              <div class="game_pic"><img src="../img/img-bestapp-05.png" alt=""></div>
+              <h3>Pokémon Quest</h3>
+              <p>by The Pokemon Company</p>
+              <div class="phone_model">
+                <a href="">Andriod</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+@charset "utf-8";
+// ======================================================================
+//
+// 【ミックスイン名】 img-replacement
+//
+// 【呼び出し】
+//  @include img-replacement;
+//
+// 【機能】
+//  - 画像置換用の各プロパティを出力
+//  * img-replacement-sprite.scssでincludeされています
+//
+// 【参考】
+//  http://coliss.com/articles/build-websites/operation/css/css-hack-new-image-eplacement-by-zeldman.html
+//
+// 【製作者】n.umeyama
+//
+// 【最終更新者】y.hatano
+//
+// ======================================================================
+
+@mixin img-replacement {
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  padding: 0;
+  border: none;
+  overflow: hidden;
+}

@@ -1,0 +1,213 @@
+@charset "utf-8";
+// ======================================================================
+//
+// 【ファイル名】 _setting.scss
+//
+// 【このファイルについて】
+//  - _config.scssを元に、出力するリセットcssを切り替え、各種設定を上書きします
+//
+// 【解説】
+// @if 内での@import ができなかったため、
+// 各リセットCSSをmixin化し、@includeで呼び出す方式を採用しています
+//
+// これができない
+// @if $cssreset == xxx {
+//		@import "_xxxx.scss";
+// }
+//
+// 【製作者】n.umeyama
+//
+// 【最終更新者】y.hatano
+//
+// ======================================================================
+
+// ----------------------------------------------------------------------
+// NHN オリジナル リセットCSS
+// ----------------------------------------------------------------------
+@import "_nhn.scss";
+
+
+// ----------------------------------------------------------------------
+// リセットcssの指定と、_config.scssで指定した設定を上書きします
+// ----------------------------------------------------------------------
+@if $css_init {
+
+  /*----------------------------------------
+	 1. リセットcssを指定
+	----------------------------------------*/
+  @if $cssreset {
+    @include nhnReset;
+  }
+
+  /*----------------------------------------
+	 2. Style設定
+	----------------------------------------*/
+  body {
+    color: $fontColor;
+    font-size: $fontSizeDef;
+    font-family: $fontFamily;
+    line-height: $lineHeight;
+  }
+
+  // a:link { color: $link;}
+  // a:visited { color: $visited;}
+  // a:hover { color: $hover;}
+  // a:active { color: $active;}
+
+  @if $configAllwaysScrollbar {
+    html {
+      overflow-y: scroll;
+    }
+  }
+
+  @if $config_a {
+    a {
+      text-decoration: $a_text-decoration;
+    }
+  }
+
+  @if $config_a02 {
+
+    a:hover,
+    a:active {
+      text-decoration: $a02_text-decoration;
+      outline: $a02_outline;
+    }
+  }
+
+  @if $config_textarea {
+    textarea {
+      margin: $textarea_margin;
+      padding: $textarea_padding;
+      background: $textarea_bg;
+      border: $textarea_border;
+      overflow: $textarea_overflow;
+      vertical-align: $textarea_valign;
+      @include box-sizing(border-box);
+    }
+  }
+
+  @if $config_thtd {
+
+    th,
+    td {
+      padding: $thtd_padding;
+      text-align: $thtd_align;
+      vertical-align: $thtd_valign;
+    }
+  }
+
+  @if $config_form {
+
+    input,
+    select,
+    textarea {
+      margin: $form_margin;
+      padding: $form_padding;
+      color: $form_color;
+      font-family: $form_family;
+      font-size: $form_size;
+      vertical-align: $form_vertical-align;
+    }
+  }
+
+  @if $config_form02 {
+
+    input[type="button"],
+    input[type="reset"],
+    input[type="submit"] {
+      cursor: $form_cursor;
+    }
+  }
+
+  @if $config_form_button {
+    button {
+      margin: $form_button_margin;
+      padding: $form_button_padding;
+      color: $form_button_color;
+      font-family: $form_button_family;
+      font-size: $form_button_size;
+      vertical-align: $form_button_vertical-align;
+      cursor: $form_button_cursor;
+    }
+  }
+
+  @if $config_ins {
+    ins {
+      background-color: $ins_bgColor;
+      color: $ins_color;
+      text-decoration: $ins_text;
+    }
+  }
+
+  @if $config_mark {
+    mark {
+      background-color: $mark_bgColor;
+      color: $mark_color;
+      font-style: $mark_style;
+      font-weight: $mark_weight;
+    }
+  }
+
+  @if $config_em {
+    em {
+      font-style: $em_style;
+    }
+  }
+
+  @if $config_small {
+    small {
+      font-size: $small_size;
+    }
+  }
+
+  @if $config_sub {
+    sub {
+      position: $sub_position;
+      line-height: $sub_line-height;
+      font-size: $sub_size;
+      bottom: $sub_btm;
+    }
+  }
+
+  @if $config_sup {
+    sup {
+      position: $sup_position;
+      line-height: $sup_line-height;
+      font-size: $sup_size;
+      top: $sup_top;
+    }
+  }
+
+  @if $config_hr {
+    hr {
+      display: block;
+      height: $hr_height;
+      border: 0;
+      border-top: $hr_border;
+      margin: $hr_margin;
+      padding: 0;
+    }
+  }
+
+  /*----------------------------------------
+	 3-1. clearfixクラスを出力
+	----------------------------------------*/
+  @if $configClearfix {
+    @include clearfix();
+  }
+
+  /*----------------------------------------
+	 3-2. margin／padding スペースクラスを出力
+	----------------------------------------*/
+  @if $configSpacing {
+    @include spacing($configSpacing);
+  }
+
+  /*----------------------------------------
+	 3-3. サイト制作支援用 シングルプロパティを出力
+	----------------------------------------*/
+  @if $configSinglePropaty {
+    @include singlePropaty();
+  }
+}

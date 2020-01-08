@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>blockchain-lab</title>
+  <link rel="stylesheet" href="../css/main.v01.css">
+  <script src="../js/jquery-1.12.4.min.js"></script>
+</head>
+
+<body>
+  <div id="wrapper" class="arena_detail match_main">
+    <header id="header"></header>
+    <script>
+      $("#header").load("common_header.html");
+    </script>
+    <main>
+      <div class="main_content">
+        <div class="match_main_head">
+          <div class="main_con">
+            <div class="match_list">
+              <div class="match_tit">
+                <h2>Match List</h2>
+                <ul class="top_btn">
+                  <li class="create_match">
+                    <a href="" class="btn btn_bold">CREATE MATCH</a>
+                  </li>
+                  <li>
+                    <div class="bx_select">
+                      <!--加on 显示下拉框-->
+                      <div class="txt_select">
+                        <a class="select_vle">FREE</a>
+                        <span class="ico_arrow">목록 열기</span>
+                      </div>
+                      <ul class="select_content">
+                        <li><a href="">FREE</a></li>
+                        <li><a href="">REFRESH</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="" class="btn">SEE ALL</a>
+                  </li>
+                  <li>
+                    <a href="" class="btn btn_light">REFRESH</a>
+                  </li>
+                </ul>
+              </div>
+              <ul class="list_con game_list">
+                <li>
+                  <a href="">
+                    <div class="game_list_head" style="background-image:url('../img/img_gametype-01.png')"></div>
+                    <div class="game_list_main">
+                      <span>2 Player</span>
+                      <p>PvP Match</p>
+                      <div class="price">
+                        <span>800</span>PEBL
+                      </div>
+                      <div class="foot">
+                        <p class="normal">Normal</p>
+                        <p class="entry">ENTRY FEE<span>20 PEBL</span></p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <div class="game_list_head" style="background-image:url('../img/img_gametype-02.png')"></div>
+                    <div class="game_list_main">
+                      <span>2 Player</span>
+                      <p>Tournament</p>
+                      <div class="price">
+                        <span>800</span>PEBL
+                      </div>
+                      <div class="foot">
+                        <p class="normal">Normal</p>
+                        <p class="entry">ENTRY FEE<span>20 PEBL</span></p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <div class="game_list_head" style="background-image:url('../img/img_gametype-03.png')"></div>
+                    <div class="game_list_main">
+                      <span>2 Player</span>
+                      <p>Ranking Tournament Match</p>
+                      <div class="price">
+                        <span>800</span>PEBL
+                      </div>
+                      <div class="foot">
+                        <p class="normal">Normal</p>
+                        <p class="entry">ENTRY FEE<span>20 PEBL</span></p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <div class="game_list_head" style="background-image:url('../img/img_gametype-04.png')"></div>
+                    <div class="game_list_main">
+                      <span>2 Player</span>
+                      <p>PvP Match</p>
+                      <div class="price">
+                        <span>800</span>PEBL
+                      </div>
+                      <div class="foot">
+                        <p class="normal">Normal</p>
+                        <p class="entry">ENTRY FEE<span>20 PEBL</span></p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="match_main_body">
+          <div class="main_con">
+            <div class="detail_con">
+              <div class="match_list match_his">
+                <div class="match_tit">
+                  <h2>Match List</h2>
+                  <ul class="top_btn">
+                    <li>
+                      <div class="bx_select w-136">
+                        <!--加on 显示下拉框-->
+                        <div class="txt_select">
+                          <a class="select_vle">ALL TIME</a>
+                          <span class="ico_arrow">목록 열기</span>
+                        </div>
+                        <ul class="select_content">
+                          <li><a href="">FREE</a></li>
+                          <li><a href="">REFRESH</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="" class="btn">SEE ALL</a>
+                    </li>
+                  </ul>
+                </div>
+                <ul class="list_con list_match list01">
+                  <li class="win">
+                    <div class="match_head">
+                      <div class="head_vs">
+                        <div class="player_img"><img src="../img/user.jpg" alt=""></div>
+                        <span class="vs_txt">VS</span>
+                        <div class="player_img"><img src="../img/user.jpg" alt=""></div>
+                      </div>
+                      <p class="point">
+                        <span class="point_l">1,228</span>
+                        <span class="point_r">1,228</span>
+                      </p>
+                    </div>
+                    <div class="game_contain">
+                      <a href="" class="prize_btn">CLAIM PRIZE</a>
+                    </div>
+                  </li>
+                  <li class="lose">
+                    <div class="match_head">
+                      <div class="head_vs">
+                        <div class="player_img"><img src="../img/user.jpg" alt=""></div>
+                        <span class="vs_txt">VS</span>
+                        <div class="player_img"><img src="../img/user.jpg" alt=""></div>
+                      </div>
+                      <p class="point">
+                        <span class="point_l">1,228</span>
+                        <span class="point_r">1,228</span>
+                      </p>
+                    </div>
+                    <div class="game_contain">
+                      <p class="date">23 Jan 2019</p>
+                      <p class="get_prize">200PEBL????</p>
+                    </div>
+                  </li>
+                  <li class="win_rank">
+                    <div class="match_head">
+                      <div class="head_vs more">
+                        <div class="player_img num">20</div>
+                        <div class="player_img"><img src="../img/user.jpg" alt=""></div>
+                        <div class="player_img"><img src="../img/user.jpg" alt=""></div>
+                        <div class="player_img"><img src="../img/user.jpg" alt=""></div>
+                      </div>
+                      <p class="rank">
+                        <span class="rank_l">1</span>
+                        <span class="rank_r">20</span>
+                      </p>
+                    </div>
+                    <div class="game_contain">
+                      <p class="date">23 Jan 2019</p>
+                    </div>
+                  </li>
+                  <li class="lose_rank">
+                    <div class="match_head">
+                      <div class="head_vs more">
+                        <div class="player_img num">20</div>
+                        <div class="player_img"><img src="../img/user.jpg" alt=""></div>
+                        <div class="player_img"><img src="../img/user.jpg" alt=""></div>
+                        <div class="player_img"><img src="../img/user.jpg" alt=""></div>
+                      </div>
+                      <p class="rank">
+                        <span class="rank_l">19</span>
+                        <span class="rank_r">20</span>
+                      </p>
+                    </div>
+                    <div class="game_contain">
+                      <p class="date">23 Jan 2019</p>
+                      <p class="get_prize">200PEBL????</p>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="list_con list_match list02">
+                  <li>
+                    <div class="match_head">
+                      <div class="head_vs">
+                        <div class="player_img"><img src="../img/user.jpg" alt=""></div>
+                        <span class="vs_txt">VS</span>
+                        <div class="player_img no">?</div>
+                      </div>
+                      <p class="my_score">
+                        My Score<span>1,228</span>
+                      </p>
+                    </div>
+                    <div class="game_contain">
+                      <p class="player">2 Player</p>
+                      <p class="type">PvP Match</p>
+                      <div class="price">
+                        <span>800</span>PEBL
+                      </div>
+                    </div>
+                  </li>
+                  <li class="canceled">
+                    <div class="match_head">
+                      <div class="head_vs">
+                        <div class="player_img"><img src="../img/user.jpg" alt=""></div>
+                        <span class="vs_txt">VS</span>
+                        <div class="player_img no">?</div>
+                      </div>
+                      <p class="my_score">
+                        My Score<span>1,228</span>
+                      </p>
+                    </div>
+                    <div class="game_contain">
+                      <p class="player">2 Player</p>
+                      <p class="type">PvP Match</p>
+                      <div class="price">
+                        <span>800</span>PEBL
+                      </div>
+                    </div>
+                  </li>
+                  <li class="result">
+                    <a href="">Check<br>Your Result!</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="match_list leader_board">
+                <div class="match_tit">
+                  <h2>Leader board</h2>
+                  <ul class="top_btn">
+                    <li>
+                      <div class="bx_select">
+                        <!--加on 显示下拉框-->
+                        <div class="txt_select">
+                          <a class="select_vle">DAILY</a>
+                          <span class="ico_arrow">목록 열기</span>
+                        </div>
+                        <ul class="select_content">
+                          <li><a href="">FREE</a></li>
+                          <li><a href="">REFRESH</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="" class="btn">SEE ALL</a>
+                    </li>
+                  </ul>
+                </div>
+                <table class="leader_tb">
+                  <colgroup>
+                    <col style="width: 80px;">
+                    <col style="width: 130px;">
+                    <col style="width: 465px;">
+                    <col style="width: 325px;">
+                    <col>
+                  </colgroup>
+
+                  <tr>
+                    <th>RANK</th>
+                    <th>USER NAME</th>
+                    <th>CUMULATIVE PRIZE</th>
+                    <th>WIN STREAK</th>
+                    <th></th>
+                  </tr>
+                  <tr>
+                    <td class="rank rank1"><span>1</span></td>
+                    <td><a href="">
+                        <span class="player_img"><img src="../img/user.jpg" alt=""></span>
+                        <span>PlayerName</span>
+                      </a>
+                    </td>
+                    <td>26,580 PEBL</td>
+                    <td>26,580 PEBL</td>
+                    <td><a href="" class="btn">BATTLE</a></td>
+                  </tr>
+                  <tr>
+                    <td class="rank rank2"><span>2</span></td>
+                    <td><a href="">
+                        <span class="player_img"><img src="../img/user.jpg" alt=""></span>
+                        <span>PlayerName</span>
+                      </a>
+                    </td>
+                    <td>26,580 PEBL</td>
+                    <td>26,580 PEBL</td>
+                    <td><a href="" class="btn">BATTLE</a></td>
+                  </tr>
+                  <tr>
+                    <td class="rank rank3"><span>3</span></td>
+                    <td><a href="">
+                        <span class="player_img"><img src="../img/user.jpg" alt=""></span>
+                        <span>PlayerName</span>
+                      </a>
+                    </td>
+                    <td>26,580 PEBL</td>
+                    <td>26,580 PEBL</td>
+                    <td><a href="" class="btn">BATTLE</a></td>
+                  </tr>
+                  <tr>
+                    <td><span>4</span></td>
+                    <td><a href="">
+                        <span class="player_img"><img src="../img/user.jpg" alt=""></span>
+                        <span>PlayerName</span>
+                      </a>
+                    </td>
+                    <td>26,580 PEBL</td>
+                    <td>26,580 PEBL</td>
+                    <td><a href="" class="btn">BATTLE</a></td>
+                  </tr>
+                  <tr>
+                    <td><span>5</span></td>
+                    <td><a href="">
+                        <span class="player_img"><img src="../img/user.jpg" alt=""></span>
+                        <span>PlayerName</span>
+                      </a>
+                    </td>
+                    <td>26,580 PEBL</td>
+                    <td>26,580 PEBL</td>
+                    <td><a href="" class="btn">BATTLE</a></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,2940 @@
+@charset "UTF-8";
+  /*----------------------------------------
+	 1. リセットcssを指定
+	----------------------------------------*/
+/*----------------------------------------
+ RESET for NHN 
+----------------------------------------*/
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/_core\/reset\/_nhn\.scss}line{font-family:\0000321}}
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, main, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background-color: transparent;
+  font-style: normal;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/_core\/reset\/_nhn\.scss}line{font-family:\0000342}}
+main, article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/_core\/reset\/_nhn\.scss}line{font-family:\0000347}}
+body {
+  position: relative;
+  -webkit-text-size-adjust: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/_core\/reset\/_nhn\.scss}line{font-family:\0000352}}
+ul, ol, li {
+  list-style: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/_core\/reset\/_nhn\.scss}line{font-family:\0000356}}
+a:focus {
+  outline: thin dotted;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/_core\/reset\/_nhn\.scss}line{font-family:\0000360}}
+img {
+  vertical-align: bottom;
+  line-height: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/_core\/reset\/_nhn\.scss}line{font-family:\0000365}}
+label {
+  cursor: pointer;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/_core\/reset\/_nhn\.scss}line{font-family:\0000369}}
+del {
+  text-decoration: line-through;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/_core\/reset\/_nhn\.scss}line{font-family:\0000373}}
+blockquote, q {
+  quotes: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/_core\/reset\/_nhn\.scss}line{font-family:\0000377}}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/_core\/reset\/_nhn\.scss}line{font-family:\0000383}}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+  /*----------------------------------------
+	 2. Style設定
+	----------------------------------------*/
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/_core\/reset\/_setting\.scss}line{font-family:\0000345}}
+body {
+  color: #666;
+  font-size: 12px;
+  font-family: "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
+  line-height: 1.333;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/_core\/reset\/_setting\.scss}line{font-family:\0000358}}
+html {
+  overflow-y: scroll;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/_core\/reset\/_setting\.scss}line{font-family:\0000364}}
+a {
+  text-decoration: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/_core\/reset\/_setting\.scss}line{font-family:\0000371}}
+a:hover,
+a:active {
+  text-decoration: underline;
+  outline: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/_core\/reset\/_setting\.scss}line{font-family:\00003153}}
+em {
+  font-style: normal;
+}
+
+  /*----------------------------------------
+	 3-1. clearfixクラスを出力
+	----------------------------------------*/
+  /*----------------------------------------
+	 3-2. margin／padding スペースクラスを出力
+	----------------------------------------*/
+  /*----------------------------------------
+	 3-3. サイト制作支援用 シングルプロパティを出力
+	----------------------------------------*/
+@font-face {
+  font-family: "circular-pro-book";
+  src: url("fonts/lineto-circular-pro-book.eot");
+  src: url("fonts/lineto-circular-pro-book.eot?#iefix") format("embedded-opentype"), url("fonts/lineto-circular-pro-book.woff2") format("woff2"), url("fonts/lineto-circular-pro-book.woff") format("woff");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "circular-pro-medium";
+  src: url("fonts/lineto-circular-pro-medium.eot");
+  src: url("fonts/lineto-circular-pro-medium.eot?#iefix") format("embedded-opentype"), url("fonts/lineto-circular-pro-medium.woff2") format("woff2"), url("fonts/lineto-circular-pro-medium.woff") format("woff");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "circular-pro-bold";
+  src: url("fonts/lineto-circular-pro-bold.eot");
+  src: url("fonts/lineto-circular-pro-bold.eot?#iefix") format("embedded-opentype"), url("fonts/lineto-circular-pro-bold.woff2") format("woff2"), url("fonts/lineto-circular-pro-bold.woff") format("woff");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "circular-pro-black";
+  src: url("fonts/lineto-circular-pro-black.eot");
+  src: url("fonts/lineto-circular-pro-black.eot?#iefix") format("embedded-opentype"), url("fonts/lineto-circular-pro-black.woff2") format("woff2"), url("fonts/lineto-circular-pro-black.woff") format("woff");
+  font-weight: 900;
+}
+/* 共通サンプル */
+/* 以下は必要に応じて
+header, footer, section, h1, h2, h3, h4, h5, h6, div, p, th, td, dl, dt, dd, ul, ol, li, a, span {
+  box-sizing: border-box;
+}
+
+a:focus, *:focus { outline:none; }
+*/
+/*common*/
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\0000386}}
+.hidden {
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\0000390}}
+body {
+  background-color: #202123;
+  font-family: "circular-pro-bold";
+  min-width: 1280px;
+  overflow: hidden;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\0000396}}
+body.bg_match {
+  background-color: #2d2e31;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003101}}
+header,
+footer,
+section,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+p,
+th,
+td,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+a,
+span {
+  box-sizing: border-box;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003126}}
+a:hover {
+  text-decoration: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003131}}
+button {
+  border: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003135}}
+.clearFix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003141}}
+.thumbnail {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003147}}
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003154}}
+.ss {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+  opacity: 0.7;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003165}}
+.bx_select {
+  position: relative;
+  margin-right: auto;
+  white-space: nowrap;
+  width: 100%;
+  height: 40px;
+  border-radius: 3px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003173}}
+.bx_select:hover {
+  color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003178}}
+.bx_select:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003184}}
+.bx_select .txt_select .select_vle {
+  display: block;
+  padding: 0 18px;
+  line-height: 40px;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 16px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003194}}
+.bx_select .txt_select .ico_arrow {
+  font-size: 0;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: url("../img/icon_arrow_dropdown.png") center center no-repeat;
+  right: 10px;
+  top: 10px;
+  background-size: cover;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003206}}
+.bx_select .select_content {
+  display: block;
+  z-index: 50;
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: -1;
+  text-align: left;
+  background: #ffffff;
+  border-radius: 3px;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003221}}
+.bx_select .select_content li:hover {
+  background-color: #e0e0e0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003225}}
+.bx_select .select_content li a {
+  display: block;
+  font-size: 16px;
+  text-align: center;
+  color: #595959;
+  line-height: 40px;
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003233}}
+.bx_select .select_content li a::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: calc(100% - 20px);
+  height: 1px;
+  background-color: #e0e0e0;
+  top: 0;
+  left: 10px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003248}}
+.see_all {
+  height: 40px;
+  border-radius: 3px;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 40px;
+  text-align: center;
+  font-size: 16px;
+  width: 97px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003260}}
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 40px;
+  height: 40px;
+  font-size: 16px;
+  padding: 0 18px;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003273}}
+.btn:hover {
+  color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003278}}
+.btn:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003283}}
+.btn.btn_bold {
+  line-height: 36px;
+  padding: 0 16px;
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003289}}
+.btn.btn_bold:hover {
+  padding: 0 16px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003296}}
+.btn.btn_bold:active {
+  padding: 0 16px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003304}}
+.btn.btn_light {
+  line-height: 36px;
+  padding: 0 16px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  background: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003310}}
+.btn.btn_light:hover, .btn.btn_light.active {
+  border: none;
+  line-height: 40px;
+  padding: 0 18px;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003319}}
+.btn.btn_light.active {
+  border: none;
+  line-height: 36px !important;
+  padding: 0 18px;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003327}}
+.btn.btn_light:active {
+  border: none;
+  line-height: 40px;
+  padding: 0 18px;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003337}}
+.list_con {
+  margin: 0 -5px;
+  white-space: nowrap;
+  padding-top: 10px;
+  vertical-align: top;
+  overflow: hidden;
+  font-size: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003345}}
+.list_con li {
+  background: #ffffff;
+  vertical-align: top;
+  position: relative;
+  width: 295px;
+  margin: 0 5px;
+  overflow: hidden;
+  border-radius: 8px;
+  display: inline-block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003355}}
+.list_con li:hover {
+  animation: moveTop 0.25s ease-out;
+  -moz-animation: moveTop 0.25s ease-out;
+  -webkit-animation: moveTop 0.25s ease-out;
+  animation-fill-mode: forwards;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003364}}
+.top_btn {
+  display: flex;
+  justify-content: flex-end;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003368}}
+.top_btn li {
+  width: 97px;
+  margin-left: 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003374}}
+.top_btn .select_content li {
+  margin-left: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003380}}
+.game_list {
+  margin-top: 20px;
+  z-index: 3;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003384}}
+.game_list .game_list_head {
+  height: 80px;
+  background-position: center center;
+  background-size: cover;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003390}}
+.game_list li {
+  height: 280px;
+  background-color: #ffffff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003394}}
+.game_list li .game_list_main {
+  padding: 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003397}}
+.game_list li .game_list_main span {
+  font-family: "circular-pro-book";
+  line-height: 20px;
+  font-size: 18px;
+  color: #595959;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003404}}
+.game_list li .game_list_main p {
+  margin-top: 4px;
+  line-height: 26px;
+  font-size: 24px;
+  color: #323232;
+  white-space: normal;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003412}}
+.game_list li .game_list_main .price {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  line-height: 8px;
+  background: #1474e4;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  padding-top: 11px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003427}}
+.game_list li .game_list_main .price span {
+  font-size: 16px;
+  display: block;
+  color: #ffffff;
+  font-family: "circular-pro-bold";
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003435}}
+.game_list li .game_list_main .foot {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003442}}
+.game_list li .game_list_main .foot .entry {
+  background: rgba(37, 228, 135, 0.1);
+  min-width: 148px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  border-radius: 15px;
+  text-align: center;
+  margin-right: 6px;
+  padding: 0 14px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003453}}
+.game_list li .game_list_main .foot .entry span {
+  color: #07cc6c;
+  font-family: unset;
+  font-size: 14px;
+  margin-left: 4px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003461}}
+.game_list li .game_list_main .foot .normal {
+  background: #efefef;
+  min-width: 78px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 15px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003477}}
+.player_img {
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003482}}
+.player_img img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003495}}
+.head_vs {
+  width: 160px;
+  height: 66px;
+  margin: 0 auto;
+  border-radius: 33px;
+  padding: 6px;
+  background-color: #fff;
+  border: 2px solid #efefef;
+  box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.05);
+  font-size: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003506}}
+.head_vs .player_img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  box-shadow: 2px 2px 15px 0 rgba(0, 0, 0, 0.15);
+  border: 1px solid #fff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003514}}
+.head_vs .player_img.no, .head_vs .player_img.num {
+  box-shadow: none;
+  border: none;
+  background-color: #efefef;
+  font-size: 24px;
+  line-height: 50px;
+  color: #b2b2b2;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003526}}
+.head_vs .vs_txt {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 10px;
+  color: #595959;
+  font-size: 18px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003536}}
+.head_vs.more .player_img {
+  position: relative;
+  margin-right: -20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003543}}
+.head_vs .player_img.no,
+.head_vs .player_img.num {
+  box-shadow: none;
+  border: none;
+  background-color: #efefef;
+  font-size: 24px;
+  line-height: 50px;
+  color: #b2b2b2;
+  text-align: center;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003554}}
+.match_main_head {
+  background: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
+  background: -ms-linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
+  padding-bottom: 40px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003560}}
+.match_main_head .main_con {
+  padding-bottom: 0 !important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003565}}
+.match_main_body {
+  background-color: rgba(32, 33, 35, 0.9);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003571}}
+#wrapper header .head_area {
+  position: relative;
+  height: 60px;
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #191919;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003580}}
+#wrapper header .head_area h1 {
+  position: relative;
+  width: 174px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003584}}
+#wrapper header .head_area h1::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 2px;
+  height: 24px;
+  background-color: #595959;
+  margin: 4px 0 0 30px;
+  top: 0;
+  right: -32px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003597}}
+#wrapper header .head_area .menu_area {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  margin-left: 32px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003604}}
+#wrapper header .head_area .menu_area .game_logo {
+  display: none;
+  margin-left: 30px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003608}}
+#wrapper header .head_area .menu_area .game_logo img {
+  max-height: 30px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003614}}
+#wrapper header .head_area .menu_area .menu_list li {
+  display: inline-block;
+  position: relative;
+  margin-left: 15px;
+  font-size: 14px;
+  line-height: 60px;
+  padding: 0 15px;
+  color: #6c6c6c;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003623}}
+#wrapper header .head_area .menu_area .menu_list li a {
+  color: #6c6c6c;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003628}}
+#wrapper header .head_area .menu_area .menu_list.list02 {
+  display: none;
+  margin-right: auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003633}}
+#wrapper header .head_area .menu_area .menu_list.list02 li a {
+  color: #888;
+  font-family: "circular-pro-medium";
+  font-weight: normal;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003643}}
+#wrapper header .head_area .menu_area .user_list li {
+  display: inline-block;
+  vertical-align: middle;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003647}}
+#wrapper header .head_area .menu_area .user_list li dl {
+  font-size: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003650}}
+#wrapper header .head_area .menu_area .user_list li dl dt {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #979797;
+  overflow: hidden;
+  border-radius: 50%;
+  position: relative;
+  vertical-align: middle;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003660}}
+#wrapper header .head_area .menu_area .user_list li dl dt img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003670}}
+#wrapper header .head_area .menu_area .user_list li dl dd {
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003675}}
+#wrapper header .head_area .menu_area .user_list li dl dd a {
+  font-family: "circular-pro-medium";
+  font-size: 14px;
+  color: #fff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003683}}
+#wrapper header .head_area .menu_area .user_list li .balance {
+  font-family: "circular-pro-medium";
+  display: inline-block;
+  font-size: 14px;
+  color: #ffffff;
+  margin: 0 40px 0 30px;
+  padding-left: 30px;
+  line-height: 24px;
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003693}}
+#wrapper header .head_area .menu_area .user_list li .balance::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 2px;
+  height: 24px;
+  background-color: #595959;
+  top: 0;
+  left: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003704}}
+#wrapper header .head_area .menu_area .user_list li .balance img {
+  width: 20px;
+  margin-right: 6px;
+  vertical-align: middle;
+  margin-top: -2px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003712}}
+#wrapper header .head_area .menu_area .user_list li .my_game {
+  height: 36px;
+  line-height: 32px;
+  margin-top: -2px;
+  padding: 0 16px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  display: inline-block;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.5);
+  border-radius: 3px;
+  backdrop-filter: blur(5px);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003731}}
+#wrapper main .main_content {
+  padding: 40px 50px 50px 50px;
+  overflow: hidden;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003735}}
+#wrapper main .main_content h2 {
+  font-family: "circular-pro-book";
+  color: #ffffff;
+  opacity: 0.5;
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: normal;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003744}}
+#wrapper main .main_content .banner_area {
+  display: flex;
+  justify-content: space-between;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003748}}
+#wrapper main .main_content .banner_area .game_banner {
+  display: flex;
+  width: calc(100% - 310px);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003752}}
+#wrapper main .main_content .banner_area .game_banner .left_pic {
+  position: relative;
+  height: 330px;
+  border-radius: 6px;
+  margin-right: 10px;
+  background: url("../img/img_game_01.png") center center no-repeat;
+  background-size: cover;
+  flex: 1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003761}}
+#wrapper main .main_content .banner_area .game_banner .left_pic .banner-con {
+  position: relative;
+  padding: 118px 30px 78px 30px;
+  z-index: 5;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003766}}
+#wrapper main .main_content .banner_area .game_banner .left_pic .banner-con img {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003772}}
+#wrapper main .main_content .banner_area .game_banner .left_pic .banner-con .banner_tit {
+  font-size: 30px;
+  color: #ffffff;
+  font-family: "circular-pro-black";
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003781}}
+#wrapper main .main_content .banner_area .game_banner .left_pic .banner-con .banner_point {
+  padding: 0 16px 0 42px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  margin-top: 10px;
+  background: #ffffff url("../img/img_diamonds.png") 16px center no-repeat;
+  background-size: 24px 24px;
+  border-radius: 24px;
+  color: #1474e4;
+  display: inline-block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003794}}
+#wrapper main .main_content .banner_area .game_banner .left_pic .banner-con .banner_comp {
+  margin-top: 30px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "circular-pro-book";
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003801}}
+#wrapper main .main_content .banner_area .game_banner .left_pic .banner-con .text-join {
+  width: 255px;
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  background-color: #e9fcf3;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003812}}
+#wrapper main .main_content .banner_area .game_banner .left_pic .banner-con .text-join .txt {
+  width: 145px;
+  font-size: 14px;
+  line-height: 1;
+  padding: 9px 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003818}}
+#wrapper main .main_content .banner_area .game_banner .left_pic .banner-con .text-join .txt i {
+  color: #323232;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003822}}
+#wrapper main .main_content .banner_area .game_banner .left_pic .banner-con .text-join .txt em {
+  color: #07cc6c;
+  display: block;
+  margin-top: 2px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003829}}
+#wrapper main .main_content .banner_area .game_banner .left_pic .banner-con .text-join .join_btn {
+  width: 110px;
+  background-color: #09cc6c;
+  font-size: 18px;
+  height: 48px;
+  line-height: 48px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: #ffffff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003841}}
+#wrapper main .main_content .banner_area .game_banner .left_pic .banner-con .txt-prize {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  width: 100px;
+  height: 50px;
+  padding-top: 10px;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  background: url("../img/img_badge01.png") center center no-repeat;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003856}}
+#wrapper main .main_content .banner_area .game_banner .right_pic {
+  position: relative;
+  width: calc(40% - 5px);
+  min-width: 410px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003861}}
+#wrapper main .main_content .banner_area .game_banner .right_pic .slick_top01 .draggable {
+  height: 290px;
+  overflow: hidden;
+  border-radius: 6px;
+  overflow: hidden;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003868}}
+#wrapper main .main_content .banner_area .game_banner .right_pic .banner-pic-ares {
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003874}}
+#wrapper main .main_content .banner_area .game_banner .right_pic .banner-pic-ares .banner-con {
+  position: relative;
+  z-index: 10;
+  height: 100%;
+  padding: 112px 30px 30px 30px;
+}
+@media screen and (max-width: 1600px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003874}}
+  #wrapper main .main_content .banner_area .game_banner .right_pic .banner-pic-ares .banner-con {
+    padding: 88px 30px 78px 30px;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003886}}
+#wrapper main .main_content .banner_area .game_banner .right_pic .pic {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  /* height: 100%; */
+  z-index: 1;
+  overflow: hidden;
+  transform: translate(-50%, -50%);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003897}}
+#wrapper main .main_content .banner_area .game_banner .right_pic .pic-logo {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003904}}
+#wrapper main .main_content .banner_area .game_banner .right_pic .pic-text {
+  font-size: 36px;
+  color: #fff;
+  font-family: "circular-pro-black";
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+@media screen and (max-width: 1600px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003904}}
+  #wrapper main .main_content .banner_area .game_banner .right_pic .pic-text {
+    font-size: 30px;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003917}}
+#wrapper main .main_content .banner_area .game_banner .right_pic .text-prize {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  width: 100px;
+  height: 50px;
+  padding-top: 10px;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003928}}
+#wrapper main .main_content .banner_area .game_banner .right_pic .text-prize.part-1 {
+  background: url('../img/img_badge02.png?1577069344') no-repeat center center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003932}}
+#wrapper main .main_content .banner_area .game_banner .right_pic .text-prize.part-2 {
+  background: url('../img/img_badge03.png?1577069351') no-repeat center center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003936}}
+#wrapper main .main_content .banner_area .game_banner .right_pic .text-prize.part-3 {
+  background: url('../img/img_badge04.png?1577069358') no-repeat center center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003941}}
+#wrapper main .main_content .banner_area .game_banner .right_pic .text-pebl {
+  display: inline-block;
+  background: #fff url('../img/img_diamonds.png?1576819740') no-repeat 16px center;
+  background-size: 24px 24px;
+  height: 48px;
+  line-height: 48px;
+  border-radius: 24px;
+  font-size: 22px;
+  color: #1474e4;
+  padding: 0 16px 0 48px;
+  margin-top: 10px;
+}
+@media screen and (max-width: 1600px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003941}}
+  #wrapper main .main_content .banner_area .game_banner .right_pic .text-pebl {
+    padding: 0 16px 0 42px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003961}}
+#wrapper main .main_content .banner_area .game_banner .right_pic .text-company {
+  margin-top: 30px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "circular-pro-book";
+}
+@media screen and (max-width: 1600px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003961}}
+  #wrapper main .main_content .banner_area .game_banner .right_pic .text-company {
+    margin-top: 20px;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003972}}
+#wrapper main .main_content .banner_area .game_banner .right_pic .pic-number {
+  position: relative;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.3);
+  margin: 12px 10px 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003979}}
+#wrapper main .main_content .banner_area .game_banner .right_pic .pic-number .number-txt {
+  float: left;
+  width: 40px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003983}}
+#wrapper main .main_content .banner_area .game_banner .right_pic .pic-number .number-txt span {
+  float: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003987}}
+#wrapper main .main_content .banner_area .game_banner .right_pic .pic-number .number-txt .active {
+  color: rgba(255, 255, 255, 0.7);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003992}}
+#wrapper main .main_content .banner_area .game_banner .right_pic .pic-number .par {
+  float: left;
+  width: calc(100% - 100px);
+  height: 2px;
+  background: #444;
+  margin-top: 8px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\00003999}}
+#wrapper main .main_content .banner_area .game_banner .right_pic .pic-number .par span {
+  display: block;
+  float: left;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.7);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031007}}
+#wrapper main .main_content .banner_area .game_banner .right_pic .pic-number .btnArea {
+  float: right;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031010}}
+#wrapper main .main_content .banner_area .game_banner .right_pic .pic-number .btnArea li {
+  float: left;
+  margin-left: 5px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031019}}
+#wrapper main .main_content .banner_area .user_info {
+  width: 290px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031022}}
+#wrapper main .main_content .banner_area .user_info .info_contain {
+  display: flex;
+  justify-content: space-between;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031026}}
+#wrapper main .main_content .banner_area .user_info .info_contain .info_l {
+  background: linear-gradient(to bottom right, rgba(255, 118, 115, 0.7), rgba(207, 121, 119, 0.7));
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031030}}
+#wrapper main .main_content .banner_area .user_info .info_contain .info_r {
+  background: linear-gradient(to bottom right, rgba(117, 81, 232, 0.7), rgba(26, 122, 251, 0.7));
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031034}}
+#wrapper main .main_content .banner_area .user_info .info_contain .info_r .user_pic img {
+  width: 16px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031041}}
+#wrapper main .main_content .banner_area .user_info .info_l,
+#wrapper main .main_content .banner_area .user_info .info_r {
+  border-radius: 5px;
+  padding: 22px 0 22px 16px;
+  width: 140px;
+  color: rgba(255, 255, 255, 0.5);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031048}}
+#wrapper main .main_content .banner_area .user_info .info_l .user_pic,
+#wrapper main .main_content .banner_area .user_info .info_r .user_pic {
+  width: 30px;
+  height: 30px;
+  background: #ffffff;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 7px;
+  margin-bottom: 14px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031058}}
+#wrapper main .main_content .banner_area .user_info .info_l .user_now,
+#wrapper main .main_content .banner_area .user_info .info_r .user_now {
+  font-size: 12px;
+  padding: 6px 0 4px;
+  line-height: 14px;
+  font-family: "circular-pro-book";
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031065}}
+#wrapper main .main_content .banner_area .user_info .info_l .count_down,
+#wrapper main .main_content .banner_area .user_info .info_r .count_down {
+  height: 22px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031070}}
+#wrapper main .main_content .banner_area .user_info .winners {
+  padding-top: 30px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031073}}
+#wrapper main .main_content .banner_area .user_info .winners .prize_tit {
+  font-size: 22px;
+  color: #ffffff;
+  line-height: 26px;
+  padding-bottom: 13px;
+  border-bottom: 1px solid #323232;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031081}}
+#wrapper main .main_content .banner_area .user_info .winners ul {
+  margin-top: 14px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031084}}
+#wrapper main .main_content .banner_area .user_info .winners ul li {
+  float: left;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031088}}
+#wrapper main .main_content .banner_area .user_info .winners ul li:first-child {
+  margin-right: 12px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031092}}
+#wrapper main .main_content .banner_area .user_info .winners ul li dl {
+  margin-bottom: 6px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031095}}
+#wrapper main .main_content .banner_area .user_info .winners ul li dl dt {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #595959;
+  border-radius: 50%;
+  overflow: hidden;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031103}}
+#wrapper main .main_content .banner_area .user_info .winners ul li dl dt img {
+  width: 100%;
+  height: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031109}}
+#wrapper main .main_content .banner_area .user_info .winners ul li dl dd {
+  width: 98px;
+  display: inline-block;
+  margin-left: 6px;
+  line-height: 30px;
+  background: rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+  font-size: 14px;
+  border-radius: 21px;
+  vertical-align: top;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031120}}
+#wrapper main .main_content .banner_area .user_info .winners ul li dl dd img {
+  width: 14px;
+  margin-right: 4px;
+  margin-top: -2px;
+  vertical-align: middle;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031129}}
+#wrapper main .main_content .banner_area .user_info .winners ul li p {
+  font-size: 12px;
+  font-family: "circular-pro-book";
+  color: #6c6c6c;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031140}}
+#wrapper main .main_content .game_contain {
+  padding: 20px;
+  font-size: 18px;
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031145}}
+#wrapper main .main_content .game_contain .prize_btn {
+  display: inline-block;
+  font-family: "circular-pro-black";
+  width: 232px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 8px;
+  background-color: #efefef;
+  color: #07cc6c;
+  font-size: 20px;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031158}}
+#wrapper main .main_content .game_contain .date {
+  line-height: 20px;
+  color: #b2b2b2;
+  margin: 7px 0 4px 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031164}}
+#wrapper main .main_content .game_contain .get_prize {
+  line-height: 20px;
+  padding-left: 30px;
+  color: #07cc6c;
+  background: url(../img/ico_get_prize.png?1548890092) no-repeat center left;
+  background-size: 22px 22px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031173}}
+#wrapper main .main_content .recently_played {
+  margin-top: 30px;
+  position: relative;
+  height: 475px;
+  padding-top: 30px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031181}}
+#wrapper main .main_content .recently_played.bg01 .game_img:nth-of-type(1) {
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031187}}
+#wrapper main .main_content .recently_played .game_img {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 260px;
+  z-index: 2;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031195}}
+#wrapper main .main_content .recently_played .nav_list {
+  position: relative;
+  z-index: 4;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031202}}
+#wrapper main .main_content .recently_played .nav_list .menu_nav {
+  width: 733px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 5px solid rgba(255, 255, 255, 0.1);
+  height: 65px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031209}}
+#wrapper main .main_content .recently_played .nav_list .menu_nav li {
+  height: 60px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031212}}
+#wrapper main .main_content .recently_played .nav_list .menu_nav li:hover {
+  color: #25e487;
+  border-bottom: 5px solid #25e487;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031217}}
+#wrapper main .main_content .recently_played .nav_list .menu_nav li + li {
+  margin-left: 30px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031221}}
+#wrapper main .main_content .recently_played .nav_list .menu_nav li.on a, #wrapper main .main_content .recently_played .nav_list .menu_nav li:hover a {
+  color: #25e487;
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031227}}
+#wrapper main .main_content .recently_played .nav_list .menu_nav li a {
+  display: block;
+  line-height: 45px;
+  font-size: 32px;
+  color: #ffffff;
+  opacity: 0.9;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031238}}
+#wrapper main .main_content .recently_played .game_list {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  z-index: 3;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031245}}
+#wrapper main .main_content .recently_played .game_list li {
+  width: 295px;
+  margin: 0 5px;
+  border-radius: 8px;
+  vertical-align: top;
+  position: relative;
+  height: 280px;
+  background-color: #ffffff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031254}}
+#wrapper main .main_content .recently_played .game_list li.secret {
+  position: relative;
+  background: -webkit-linear-gradient(left top, #da8a8a, #76198f);
+  background: -ms-linear-gradient(bottom right, #da8a8a, #76198f);
+  background: linear-gradient(to bottom right, #da8a8a, #76198f);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031260}}
+#wrapper main .main_content .recently_played .game_list li.secret .btn_qa {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: url("../img/btn_banner_helf.png") center center no-repeat;
+  font-size: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031272}}
+#wrapper main .main_content .recently_played .game_list li.secret .game_list_main p {
+  padding-top: 60px;
+  line-height: 32px;
+  font-size: 26px;
+  color: #ffffff;
+  white-space: normal;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031280}}
+#wrapper main .main_content .recently_played .game_list li.secret .game_list_main .foot {
+  width: calc(100% - 40px);
+  display: inline-block;
+  height: 48px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031289}}
+#wrapper main .main_content .recently_played .game_list li.secret .game_list_main .foot p {
+  padding-top: 0;
+  line-height: 44px;
+  font-size: 18px;
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031302}}
+#wrapper main .main_content .top_arena_game {
+  margin-top: 40px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031305}}
+#wrapper main .main_content .top_arena_game .game_tit {
+  width: 100%;
+  position: relative;
+  z-index: 4;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031315}}
+#wrapper main .main_content .top_arena_game .list_con {
+  margin-top: 26px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031318}}
+#wrapper main .main_content .top_arena_game .list_con li {
+  display: inline-block;
+  border-radius: 5px;
+  height: 286px;
+  background-color: #ffffff;
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031325}}
+#wrapper main .main_content .top_arena_game .list_con li .game_top {
+  position: relative;
+  height: 110px;
+  background-size: cover;
+  background-position: center center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031331}}
+#wrapper main .main_content .top_arena_game .list_con li .game_top p {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  min-width: 64px;
+  height: 36px;
+  line-height: 36px;
+  font-size: 14px;
+  text-align: center;
+  border: rgba(255, 255, 255, 0.2) 2px solid;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+  color: #fff;
+  z-index: 2;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031347}}
+#wrapper main .main_content .top_arena_game .list_con li .game_top h3 {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #ffffff;
+  font-size: 22px;
+  text-align: left;
+  z-index: 2;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031361}}
+#wrapper main .main_content .top_arena_game .list_con li .game_contain {
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031364}}
+#wrapper main .main_content .top_arena_game .list_con li .game_contain span {
+  font-family: "circular-pro-black";
+  margin-top: 6px;
+  font-size: 32px;
+  line-height: 26px;
+  color: #1474e4;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031372}}
+#wrapper main .main_content .top_arena_game .list_con li .game_contain p {
+  margin-top: 10px;
+  font-size: 20px;
+  line-height: 22px;
+  color: #6c6c6c;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031379}}
+#wrapper main .main_content .top_arena_game .list_con li .game_contain a {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  display: block;
+  width: calc(100% - 40px);
+  height: 48px;
+  line-height: 48px;
+  margin: 19px auto 0;
+  background-color: #efefef;
+  border-radius: 5px;
+  opacity: 0.9;
+  color: #1474e4;
+  font-size: 18px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031399}}
+#wrapper main .main_content .best_app {
+  margin-top: 60px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031402}}
+#wrapper main .main_content .best_app .game_tit {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  z-index: 4;
+  margin-top: 30px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031412}}
+#wrapper main .main_content .best_app .game_tit .top_btn li:first-child {
+  width: unset;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031418}}
+#wrapper main .main_content .best_app .game_tit .arrow {
+  display: inline-block;
+  vertical-align: middle;
+  height: 40px;
+  font-size: 16px;
+  line-height: 18px;
+  color: rgba(255, 255, 255, 0.5);
+  border-radius: 3px;
+  backdrop-filter: blur(5px);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031428}}
+#wrapper main .main_content .best_app .game_tit .arrow.arrow_l {
+  border-right-width: 1px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-right: -5px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031435}}
+#wrapper main .main_content .best_app .game_tit .arrow.arrow_r {
+  border-left-width: 1px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031441}}
+#wrapper main .main_content .best_app .game_tit .arrow.arrow_l, #wrapper main .main_content .best_app .game_tit .arrow.arrow_r {
+  padding: 8px 9px;
+  border: rgba(255, 255, 255, 0.2) 2px solid;
+  background: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031450}}
+#wrapper main .main_content .best_app .list_con {
+  margin-top: 10px;
+  font-size: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031454}}
+#wrapper main .main_content .best_app .list_con li {
+  background-color: #2d2e31;
+  text-align: center;
+  padding: 50px 30px 30px 24px;
+  display: inline-block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031460}}
+#wrapper main .main_content .best_app .list_con li .game_pic {
+  width: 145px;
+  border-radius: 29px;
+  overflow: hidden;
+  margin: 0 auto;
+  border: 1px solid #444;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031469}}
+#wrapper main .main_content .best_app .list_con li h3 {
+  font-family: "circular-pro-black";
+  font-size: 26px;
+  color: #fff;
+  margin-top: 40px;
+  line-height: 32px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031480}}
+#wrapper main .main_content .best_app .list_con li p {
+  font-family: "circular-pro-book";
+  font-size: 16px;
+  color: #fff;
+  margin-top: 8px;
+  line-height: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  opacity: 0.5;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031492}}
+#wrapper main .main_content .best_app .list_con li .phone_model {
+  display: flex;
+  justify-content: center;
+  margin-top: 27px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031497}}
+#wrapper main .main_content .best_app .list_con li .phone_model a {
+  margin: 0 5px;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 36px;
+  font-size: 16px;
+  line-height: 36px;
+  color: #ffffff;
+  padding: 0 18px;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031517}}
+#wrapper.arena_detail main {
+  background-color: #103f70;
+  position: relative;
+  z-index: 5;
+  max-width: 1920px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031523}}
+#wrapper.arena_detail main .main_content {
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031526}}
+#wrapper.arena_detail main .main_content .head_game {
+  background-image: url("../img/bg_detail_top.png");
+  position: relative;
+  height: 260px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031534}}
+#wrapper.arena_detail main .main_content .head_game .logo {
+  left: 80px;
+  width: 310px;
+  position: absolute;
+  bottom: 18px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031540}}
+#wrapper.arena_detail main .main_content .head_game .logo img {
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031545}}
+#wrapper.arena_detail main .main_content .head_game .game_name {
+  position: absolute;
+  left: 430px;
+  bottom: 18px;
+  color: #ffffff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031551}}
+#wrapper.arena_detail main .main_content .head_game .game_name dt {
+  font-family: "circular-pro-book";
+  opacity: 0.5;
+  font-size: 26px;
+  line-height: 33px;
+  margin-bottom: 12px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031559}}
+#wrapper.arena_detail main .main_content .head_game .game_name dd {
+  font-family: "circular-pro-black";
+  line-height: 50px;
+  font-size: 52px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031564}}
+#wrapper.arena_detail main .main_content .head_game .game_name dd span {
+  vertical-align: middle;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031568}}
+#wrapper.arena_detail main .main_content .head_game .game_name dd .data {
+  font-family: "circular-pro-book";
+  display: inline-block;
+  margin-left: 30px;
+  min-width: 40px;
+  height: 40px;
+  font-size: 20px;
+  line-height: 38px;
+  text-align: center;
+  border-radius: 5px;
+  color: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031585}}
+#wrapper.arena_detail main .main_content .head_game .btn {
+  position: absolute;
+  bottom: 18px;
+  right: 80px;
+  min-width: 166px;
+  height: 58px;
+  font-size: 18px;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 54px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031598}}
+#wrapper.arena_detail main .main_content .main_con {
+  margin: 0 100px;
+  padding-bottom: 100px;
+  overflow: hidden;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031603}}
+#wrapper.arena_detail main .main_content .main_con .player_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 840px;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.03);
+  border-radius: 8px;
+  margin-top: 60px;
+  color: #ffffff;
+  padding: 0 30px;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031617}}
+#wrapper.arena_detail main .main_content .main_con .player_info .name .player_img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+  border: 2px solid #fff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031626}}
+#wrapper.arena_detail main .main_content .main_con .player_info .name .player_name {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: "circular-pro-black";
+  font-size: 24px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031639}}
+#wrapper.arena_detail main .main_content .main_con .player_info .title {
+  display: block;
+  font-family: "circular-pro-medium";
+  line-height: 18px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031647}}
+#wrapper.arena_detail main .main_content .main_con .player_info .data {
+  display: block;
+  line-height: 28px;
+  font-size: 22px;
+  margin-top: 9px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031655}}
+#wrapper.arena_detail main .main_content .main_con .match_list {
+  width: 100%;
+  display: inline-block;
+  margin-top: 50px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031660}}
+#wrapper.arena_detail main .main_content .main_con .match_list .tb_head02 {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031665}}
+#wrapper.arena_detail main .main_content .main_con .match_list.all .game_list {
+  white-space: normal;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031668}}
+#wrapper.arena_detail main .main_content .main_con .match_list.all .game_list li {
+  margin-bottom: 30px;
+  width: 275px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031677}}
+#wrapper.arena_detail main .main_content .main_con .match_list.his_all .list_match li {
+  margin-bottom: 30px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031683}}
+#wrapper.arena_detail main .main_content .main_con .match_list .match_tit {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031689}}
+#wrapper.arena_detail main .main_content .main_con .match_list .match_tit .top_btn .create_match {
+  margin-right: 30px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031693}}
+#wrapper.arena_detail main .main_content .main_con .match_list .match_tit .top_btn li {
+  width: unset;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031697}}
+#wrapper.arena_detail main .main_content .main_con .match_list .match_tit .top_btn .bx_select {
+  width: 101px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031700}}
+#wrapper.arena_detail main .main_content .main_con .match_list .match_tit .top_btn .bx_select.w-168 {
+  width: 168px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031704}}
+#wrapper.arena_detail main .main_content .main_con .match_list .match_tit .top_btn .bx_select.w-136 {
+  width: 136px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031709}}
+#wrapper.arena_detail main .main_content .main_con .match_list .match_tit .top_btn .bx_select .txt_select .select_vle {
+  color: rgba(255, 255, 255, 0.5);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031713}}
+#wrapper.arena_detail main .main_content .main_con .match_list .match_tit .top_btn .bx_select .txt_select .ico_arrow {
+  opacity: 0.3;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031719}}
+#wrapper.arena_detail main .main_content .main_con .match_list .match_tit .top_btn .see_all {
+  color: rgba(255, 255, 255, 0.5);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031725}}
+#wrapper.arena_detail main .main_content .main_con .match_list .game_list {
+  margin-top: 30px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031728}}
+#wrapper.arena_detail main .main_content .main_con .match_list .game_list li {
+  width: 272px;
+  display: inline-block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031733}}
+#wrapper.arena_detail main .main_content .main_con .match_list .game_list .foot {
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031736}}
+#wrapper.arena_detail main .main_content .main_con .match_list .game_list .foot .normal {
+  width: 78px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031742}}
+#wrapper.arena_detail main .main_content .main_con .match_list .list_match {
+  margin-top: 30px;
+  white-space: normal;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031746}}
+#wrapper.arena_detail main .main_content .main_con .match_list .list_match li {
+  width: 272px;
+  display: inline-block;
+  height: 280px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031751}}
+#wrapper.arena_detail main .main_content .main_con .match_list .list_match li .match_head {
+  position: relative;
+  height: 180px;
+  padding: 30px 0;
+  background-color: #efefef;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031758}}
+#wrapper.arena_detail main .main_content .main_con .match_list .list_match li .match_head .point {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 22px;
+  font-size: 26px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031764}}
+#wrapper.arena_detail main .main_content .main_con .match_list .list_match li .match_head .point span {
+  flex: 1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031768}}
+#wrapper.arena_detail main .main_content .main_con .match_list .list_match li .match_head .point .point_l {
+  color: #ffffff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031772}}
+#wrapper.arena_detail main .main_content .main_con .match_list .list_match li .match_head .point .point_r {
+  color: #ffffff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031777}}
+#wrapper.arena_detail main .main_content .main_con .match_list .list_match li .match_head .rank {
+  display: flex;
+  margin-top: 20px;
+  font-size: 60px;
+  line-height: 50px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031783}}
+#wrapper.arena_detail main .main_content .main_con .match_list .list_match li .match_head .rank .rank_l {
+  color: #fff;
+  text-align: right;
+  width: 160px;
+  margin-right: 30px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031790}}
+#wrapper.arena_detail main .main_content .main_con .match_list .list_match li .match_head .rank .rank_r {
+  color: #b2b2b2;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031795}}
+#wrapper.arena_detail main .main_content .main_con .match_list .list_match li .match_head .my_score {
+  line-height: 32px;
+  margin-top: 22px;
+  font-size: 26px;
+  color: #b2b2b2;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031801}}
+#wrapper.arena_detail main .main_content .main_con .match_list .list_match li .match_head .my_score span {
+  color: #595959;
+  margin-left: 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031809}}
+#wrapper.arena_detail main .main_content .main_con .match_list .list_match li .game_contain .player {
+  line-height: 20px;
+  color: #b2b2b2;
+  margin: 7px 0 4px 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031815}}
+#wrapper.arena_detail main .main_content .main_con .match_list .list_match li .game_contain .type {
+  line-height: 20px;
+  color: #595959;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031820}}
+#wrapper.arena_detail main .main_content .main_con .match_list .list_match li .game_contain .price {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: #6c6c6c;
+  font-size: 12px;
+  text-align: center;
+  padding-top: 16px;
+  line-height: 14px;
+  color: #fff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031834}}
+#wrapper.arena_detail main .main_content .main_con .match_list .list_match li .game_contain .price span {
+  display: block;
+  font-size: 16px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031842}}
+#wrapper.arena_detail main .main_content .main_con .match_list .list_match li.win .match_head {
+  background: url(../img/bg_card_win.png?1550510350) no-repeat center center;
+  background-size: cover;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031849}}
+#wrapper.arena_detail main .main_content .main_con .match_list .list_match li.lose .match_head {
+  background: url(../img/bg_card_lose.png?1550510346) no-repeat center center;
+  background-size: cover;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031856}}
+#wrapper.arena_detail main .main_content .main_con .match_list .list_match li.win_rank .match_head {
+  background: #efefef url(../img/bg_card_win_rank.png?1550510376) no-repeat center left;
+  text-align: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031863}}
+#wrapper.arena_detail main .main_content .main_con .match_list .list_match li.lose_rank .match_head {
+  background: #efefef url(../img/bg_card_lose_rank.png?1550510384) no-repeat center left;
+  text-align: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031871}}
+#wrapper.arena_detail main .main_content .main_con .match_list .list_match li.canceled .match_head::before {
+  background: url("../img/bg_match_canceled.png?1548804214") no-repeat center center;
+  background-size: cover;
+  font-family: "circular-pro-black";
+  content: 'CANCELED';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 180px;
+  text-align: center;
+  color: #6c6c6c;
+  font-size: 26px;
+  z-index: 2;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031890}}
+#wrapper.arena_detail main .main_content .main_con .match_list .list_match li.result {
+  height: 280px;
+  background: url(../img/bg_card_open.png?1548787670) no-repeat center center;
+  background-size: cover;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031895}}
+#wrapper.arena_detail main .main_content .main_con .match_list .list_match li.result a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-top: 100px;
+  line-height: 40px;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  font-size: 32px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031910}}
+#wrapper.arena_detail main .main_content .main_con .match_list .leader_tb {
+  width: 100%;
+  text-align: center;
+  margin-top: 18px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031915}}
+#wrapper.arena_detail main .main_content .main_con .match_list .leader_tb th {
+  height: 39px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
+  font-weight: normal;
+  font-family: "circular-pro-medium";
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031923}}
+#wrapper.arena_detail main .main_content .main_con .match_list .leader_tb td {
+  height: 50px;
+  color: #ffffff;
+  font-size: 14px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031928}}
+#wrapper.arena_detail main .main_content .main_con .match_list .leader_tb td:first-child {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.5);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031933}}
+#wrapper.arena_detail main .main_content .main_con .match_list .leader_tb td.rank {
+  background: url(../img/icon_raker.png?1549909142) no-repeat center center;
+  background-size: 50px 50px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031937}}
+#wrapper.arena_detail main .main_content .main_con .match_list .leader_tb td.rank.rank1 {
+  color: #e5c779;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031941}}
+#wrapper.arena_detail main .main_content .main_con .match_list .leader_tb td.rank.rank2 {
+  color: #d0d0d0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031945}}
+#wrapper.arena_detail main .main_content .main_con .match_list .leader_tb td.rank.rank3 {
+  color: #dfab78;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031950}}
+#wrapper.arena_detail main .main_content .main_con .match_list .leader_tb td a {
+  color: #ffffff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031953}}
+#wrapper.arena_detail main .main_content .main_con .match_list .leader_tb td a span {
+  vertical-align: middle;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031957}}
+#wrapper.arena_detail main .main_content .main_con .match_list .leader_tb td a .player_img {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 6px;
+  border: 1px solid #fff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031966}}
+#wrapper.arena_detail main .main_content .main_con .match_list .leader_tb td .btn {
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 15px;
+  font-size: 12px;
+  padding: 0 12px;
+  color: rgba(255, 255, 255, 0.5);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031977}}
+#wrapper.arena_detail main .main_content .main_con .match_list .leader_tb tr {
+  padding: 0 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031980}}
+#wrapper.arena_detail main .main_content .main_con .match_list .leader_tb tr:nth-of-type(2n+1) {
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.03);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031989}}
+#wrapper.arena_detail main .main_content .main_con .match_list .leader_tb.all tbody tr:nth-of-type(2n) {
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.03);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031994}}
+#wrapper.arena_detail main .main_content .main_con .match_list .leader_tb.all tbody tr:nth-of-type(2n+1) {
+  border-radius: unset;
+  background-color: unset;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000031999}}
+#wrapper.arena_detail main .main_content .main_con .match_list .leader_tb.all tbody tr:nth-of-type(13), #wrapper.arena_detail main .main_content .main_con .match_list .leader_tb.all tbody tr:nth-of-type(15), #wrapper.arena_detail main .main_content .main_con .match_list .leader_tb.all tbody tr:nth-of-type(17), #wrapper.arena_detail main .main_content .main_con .match_list .leader_tb.all tbody tr:nth-of-type(19), #wrapper.arena_detail main .main_content .main_con .match_list .leader_tb.all tbody tr:nth-of-type(21) {
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.03);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032008}}
+#wrapper.arena_detail main .main_content .main_con .match_list .leader_tb.all tbody tr:nth-of-type(12), #wrapper.arena_detail main .main_content .main_con .match_list .leader_tb.all tbody tr:nth-of-type(14), #wrapper.arena_detail main .main_content .main_con .match_list .leader_tb.all tbody tr:nth-of-type(16), #wrapper.arena_detail main .main_content .main_con .match_list .leader_tb.all tbody tr:nth-of-type(18), #wrapper.arena_detail main .main_content .main_con .match_list .leader_tb.all tbody tr:nth-of-type(20), #wrapper.arena_detail main .main_content .main_con .match_list .leader_tb.all tbody tr:nth-of-type(22) {
+  border-radius: unset;
+  background-color: unset;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032021}}
+#wrapper.arena_detail main .main_content .main_con .match_list .leader_tb.all tbody td a span {
+  width: unset;
+  display: inline-block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032026}}
+#wrapper.arena_detail main .main_content .main_con .match_list .leader_tb.all tbody td a .player_img {
+  width: 30px;
+  display: inline-block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032040}}
+#wrapper.arena_detail.match_main {
+  background-image: url("../img/bg_cats.jpg");
+  background-color: #202123;
+  background-position: 50% top;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032048}}
+#wrapper.arena_detail.match_main header .game_logo {
+  display: inline-block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032054}}
+#wrapper.arena_detail.match_main header .menu_area .menu_list.list01 {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032058}}
+#wrapper.arena_detail.match_main header .menu_area .menu_list.list02 {
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032065}}
+#wrapper.arena_detail.match_main main {
+  background-color: unset;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032077}}
+#wrapper.match_making {
+  background: #2d2e31;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032081}}
+#wrapper.match_making header .game_logo {
+  display: inline-block !important;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032087}}
+#wrapper.match_making header .menu_area .menu_list.list01 {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032091}}
+#wrapper.match_making header .menu_area .menu_list.list02 {
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032099}}
+#wrapper.match_making main .main_content {
+  padding: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032106}}
+.matchHead {
+  position: relative;
+  background: #202123;
+  padding: 0 100px;
+  z-index: 1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032112}}
+.matchHead.making {
+  height: 410px;
+  padding-top: 80px;
+  background-position: right 35px;
+  display: flex;
+  justify-content: space-between;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032119}}
+.matchHead.making .making_info {
+  font-size: 32px;
+  color: #ffffff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032123}}
+.matchHead.making .making_info .name {
+  font-family: "circular-pro-black";
+  font-size: 42px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032128}}
+.matchHead.making .making_info .mode {
+  font-family: "circular-pro-book";
+  font-size: 26px;
+  margin-top: 10px;
+  opacity: 0.5;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032135}}
+.matchHead.making .making_info .price {
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  background: #1474e4;
+  border-radius: 20px;
+  margin-top: 30px;
+  padding: 0 20px;
+  font-size: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032145}}
+.matchHead.making .making_info .price .ico_diamonds {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-top: 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032151}}
+.matchHead.making .making_info .price .ico_diamonds img {
+  width: 100%;
+  vertical-align: top;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032157}}
+.matchHead.making .making_info .price .txt {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 18px;
+  color: #ffffff;
+  margin-left: 6px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032167}}
+.matchHead.making .making_search {
+  text-align: right;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032170}}
+.matchHead.making .making_search .text {
+  font-size: 32px;
+  color: #ffffff;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 40px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032178}}
+.matchHead.making .making_search .circle_progress {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 60px;
+  height: 60px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032185}}
+.matchHead.making .making_search .circle_progress .num {
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  left: 0;
+  top: 0;
+  line-height: 60px;
+  font-size: 26px;
+  color: #ffffff;
+  z-index: 3;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032198}}
+.matchHead.making .making_search .circle_progress .right {
+  right: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032202}}
+.matchHead.making .making_search .circle_progress .left {
+  left: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032206}}
+.matchHead.making .making_search .circle_progress .half {
+  width: 30px;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  z-index: 2;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032215}}
+.matchHead.making .making_search .circle_progress .rightcircle {
+  border-top: 3px solid #25e487;
+  border-right: 3px solid #25e487;
+  right: 0;
+  -webkit-animation: circleProgressLoad_right 10s linear infinite;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032222}}
+.matchHead.making .making_search .circle_progress .leftcircle {
+  border-bottom: 3px solid #25e487;
+  border-left: 3px solid #25e487;
+  left: 0;
+  -webkit-animation: circleProgressLoad_right 10s linear infinite;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032229}}
+.matchHead.making .making_search .circle_progress::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 3px solid transparent;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  border: 3px solid #fff;
+  opacity: 0.3;
+  box-sizing: border-box;
+  z-index: 1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032247}}
+.matchHead.score {
+  height: 252px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032250}}
+.matchHead.score::before {
+  position: absolute;
+  content: '';
+  width: 340px;
+  height: 110px;
+  top: 0;
+  left: 0;
+  background: url("../img/bg_myscore.png") center center no-repeat;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032262}}
+.matchContent {
+  position: relative;
+  min-height: 610px;
+  z-index: 10;
+  padding: 0 100px 100px 100px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032268}}
+.matchContent .matchVs {
+  font-family: "circular-pro-black";
+  position: absolute;
+  width: 100%;
+  top: -50px;
+  left: 0;
+  color: #ffffff;
+  text-align: center;
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032280}}
+.matchContent .matchVs .player {
+  min-width: 300px;
+  white-space: nowrap;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032284}}
+.matchContent .matchVs .player .player_img {
+  display: inline-block;
+  vertical-align: top;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  overflow: hidden;
+  border: 2px solid #fff;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032294}}
+.matchContent .matchVs .player .player_img.no {
+  background: #efefef;
+  font-size: 46px;
+  color: #b2b2b2;
+  line-height: 96px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032301}}
+.matchContent .matchVs .player .player_img span {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: block;
+  background: #efefef;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032309}}
+.matchContent .matchVs .player .player_img img {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 50px;
+  overflow: hidden;
+  transform: translate(-50%, -50%);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032320}}
+.matchContent .matchVs .player .player_name {
+  line-height: 40px;
+  margin-top: 30px;
+  width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032328}}
+.matchContent .matchVs .player .player_name.waiting {
+  font-family: "circular-pro-bold";
+  font-size: 28px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032334}}
+.matchContent .matchVs .player .player_score {
+  font-family: "circular-pro-bold";
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 20px;
+  font-size: 18px;
+  padding: 0 22px;
+  background: rgba(255, 255, 255, 0.1);
+  margin-top: 16px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032347}}
+.matchContent .matchVs .vs {
+  min-width: 80px;
+  margin: 0 80px;
+  line-height: 40px;
+  padding-top: 130px;
+  opacity: 0.7;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032357}}
+.match_btn {
+  font-size: 0;
+  clear: both;
+  padding-top: 90px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032362}}
+.match_btn.fixed_btn {
+  position: fixed;
+  left: 100px;
+  bottom: 50px;
+  z-index: 1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032369}}
+.match_btn a {
+  display: inline-block;
+  margin-right: 10px;
+  min-width: 166px;
+  height: 58px;
+  line-height: 58px;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032381}}
+.match_btn a.btn_gray {
+  opacity: 0.27;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032387}}
+.matchScore {
+  margin-top: -50px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032390}}
+.matchScore .your_score {
+  width: 280px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032395}}
+.matchScore .your_score h3 {
+  padding: 20px;
+  background: rgba(20, 116, 228, 0.2);
+  font-size: 22px;
+  color: #1474e4;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032402}}
+.matchScore .your_score .score_list {
+  padding: 0 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032405}}
+.matchScore .your_score .score_list li {
+  font-family: "circular-pro-medium";
+  font-size: 20px;
+  line-height: 22px;
+  padding: 16px 0;
+  border-bottom: 2px solid rgba(45, 46, 49, 0.2);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032412}}
+.matchScore .your_score .score_list li dl {
+  display: flex;
+  justify-content: space-between;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032417}}
+.matchScore .your_score .score_list li dt {
+  color: #b2b2b2;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032421}}
+.matchScore .your_score .score_list li dd {
+  text-align: right;
+  color: #2d2e31;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032426}}
+.matchScore .your_score .score_list li.total {
+  font-family: "circular-pro-bold";
+  font-size: 26px;
+  padding: 20px 0 22px;
+  border-bottom: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032432}}
+.matchScore .your_score .score_list li.total dt {
+  color: #6c6c6c;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032436}}
+.matchScore .your_score .score_list li.total dd {
+  color: #1474e4;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032445}}
+.matchScore.result_left {
+  float: left;
+  max-width: 580px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032449}}
+.matchScore.result_left .otherInfo {
+  position: relative;
+  left: 0;
+  right: 0;
+  margin-top: 20px;
+  top: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032458}}
+.matchScore .otherInfo {
+  position: absolute;
+  top: 50px;
+  right: 400px;
+  width: 280px;
+  height: 76px;
+  border-radius: 5px;
+  padding: 16px 16px 16px 74px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032467}}
+.matchScore .otherInfo span {
+  display: block;
+  line-height: 20px;
+  font-size: 18px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032472}}
+.matchScore .otherInfo span.txt {
+  color: #2d2e31;
+  margin-top: 4px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032478}}
+.matchScore .otherInfo.newScore {
+  background: #fff url("../img//ico_record.png") 20px center no-repeat;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032481}}
+.matchScore .otherInfo.newScore .num {
+  color: #07cc6c;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032486}}
+.matchScore .otherInfo.getReward {
+  background: #fff url("../img/img_diamonds.png") 20px center no-repeat;
+  background-size: 30px auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032490}}
+.matchScore .otherInfo.getReward .num {
+  color: #1474e4;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032497}}
+.nexMatch {
+  position: relative;
+  margin-top: 40px;
+  clear: both;
+  float: right;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032503}}
+.nexMatch.fixed {
+  position: fixed;
+  bottom: 50px;
+  right: 100px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032509}}
+.nexMatch .game_list {
+  margin: 30px 0 0 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032512}}
+.nexMatch .game_list li {
+  width: 270px;
+  margin-left: 10px;
+  margin-right: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032517}}
+.nexMatch .game_list li:first-child {
+  margin-left: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032524}}
+.pop_wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032533}}
+.pop_wrap .pop_common {
+  min-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.3), 0 3px 0 0 #b2b2b2;
+  background-color: #ffffff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 5px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032545}}
+.pop_wrap .pop_common .pop_head {
+  position: relative;
+  border-radius: 10px;
+  background-color: #efefef;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032550}}
+.pop_wrap .pop_common .pop_head h1 {
+  line-height: 22px;
+  font-size: 18px;
+  color: #595959;
+  padding: 14px 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032557}}
+.pop_wrap .pop_common .pop_head .btn_close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 20px;
+  height: 20px;
+  background: url("../img/btn_popup_close.png?1548733442") center center no-repeat;
+  font-size: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032568}}
+.pop_wrap .pop_common .pop_con {
+  padding-bottom: 20px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032573}}
+.pop_wrap .pop_common .pop_con p {
+  font-family: "circular-pro-book";
+  font-size: 16px;
+  line-height: 20px;
+  color: #595959;
+  padding: 60px 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032581}}
+.pop_wrap .pop_common .pop_con .btn_blue {
+  font-family: "circular-pro-bold";
+  min-width: 200px;
+  height: 50px;
+  padding: 0 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 0 0 #2266b4;
+  background-color: #2a8bfc;
+  color: #ffffff;
+  font-size: 16px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032593}}
+.pop_wrap .pop_common .pop_con .con_img {
+  border-radius: 5px;
+  overflow: hidden;
+  text-align: center;
+  margin: 30px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032599}}
+.pop_wrap .pop_common .pop_con .con_img img {
+  border: 1px solid #dcdcdc;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032606}}
+.pop_wrap .pop_pay {
+  width: 360px;
+  height: 640px;
+  position: fixed;
+  top: 0;
+  right: 60px;
+  color: #ffffff;
+  background: linear-gradient(to bottom right, #15d0c3, #09c17d);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032615}}
+.pop_wrap .pop_pay .pop_head {
+  position: relative;
+  height: 58px;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032621}}
+.pop_wrap .pop_pay .pop_con {
+  padding: 0 16px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032624}}
+.pop_wrap .pop_pay .pop_con h1 {
+  height: 52px;
+  margin: 32px 0 20px 0;
+  background: url("../img/logo_pebble_pay.png?1548956484") center center no-repeat;
+  background-size: 156px 34px;
+  font-size: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032632}}
+.pop_wrap .pop_pay .pop_con .txt_info {
+  font-family: "circular-pro-medium";
+  font-size: 13px;
+  line-height: 18px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032640}}
+.pop_wrap .pop_pay .pop_con .ico_lock {
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  background: url("../img/ico_lock.png") center center no-repeat;
+  font-size: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032649}}
+.pop_wrap .pop_pay .pop_con .input_psw {
+  margin: 40px 0 30px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032652}}
+.pop_wrap .pop_pay .pop_con .input_psw input {
+  width: 100%;
+  font-family: "circular-pro-medium";
+  height: 55px;
+  border: none;
+  background: none;
+  color: #ffffff;
+  font-size: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032662}}
+.pop_wrap .pop_pay .pop_con .input_psw input::placeholder {
+  font-family: "circular-pro-medium";
+  color: #fff;
+  opacity: 0.6;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032670}}
+.pop_wrap .pop_pay .pop_con .btn_login {
+  width: 100%;
+  height: 44px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #17d3cf;
+  font-size: 16px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032678}}
+.pop_wrap .pop_pay .pop_con .btn_login:disabled {
+  background-color: #222326;
+  opacity: 0.1;
+  color: #ffffff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032685}}
+.pop_wrap .pop_pay .pop_con .txt_backup {
+  font-family: "circular-pro-medium";
+  font-size: 16px;
+  line-height: 18px;
+  margin-top: 20px;
+  text-align: center;
+  color: #fff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032693}}
+.pop_wrap .pop_pay .pop_con .txt_backup a {
+  color: #fff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032700}}
+.pop_wrap .btn_qa {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  width: 25px;
+  height: 25px;
+  background: url("../img/ico_faq.png?1548624270") center center no-repeat;
+  font-size: 0;
+}
+
+@keyframes moveTop {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -10px;
+  }
+}
+@media screen and (max-width: 1560px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032726}}
+  #wrapper.arena_detail main .main_content .main_con {
+    width: 1120px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032731}}
+  #wrapper.arena_detail main .main_content .main_con .player_info {
+    width: 100%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032738}}
+  #wrapper.arena_detail main .main_content .main_con .match_list.all .game_list li {
+    width: 272px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032744}}
+  #wrapper.arena_detail main .main_content .main_con .match_list .list02 {
+    display: none;
+  }
+}
+@media screen and (min-width: 1560px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032758}}
+  #wrapper.arena_detail main {
+    max-width: unset;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032765}}
+  #wrapper.arena_detail main .main_content .main_con .match_list .leader_tb.all {
+    display: flex;
+    flex-direction: column;
+    height: 540px;
+    flex-wrap: wrap;
+    align-content: space-between;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032772}}
+  #wrapper.arena_detail main .main_content .main_con .match_list .leader_tb.all tbody {
+    display: contents;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032775}}
+  #wrapper.arena_detail main .main_content .main_con .match_list .leader_tb.all tbody tr {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    width: calc(50% - 40px);
+    justify-content: space-between;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032782}}
+  #wrapper.arena_detail main .main_content .main_con .match_list .leader_tb.all tbody tr:nth-of-type(1), #wrapper.arena_detail main .main_content .main_con .match_list .leader_tb.all tbody tr:nth-of-type(12) {
+    height: 39px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032788}}
+  #wrapper.arena_detail main .main_content .main_con .match_list .leader_tb.all tbody td {
+    display: flex;
+    align-items: center;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032792}}
+  #wrapper.arena_detail main .main_content .main_con .match_list .leader_tb.all tbody td:nth-child(2) {
+    margin-left: -68px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032796}}
+  #wrapper.arena_detail main .main_content .main_con .match_list .leader_tb.all tbody td:nth-child(3) {
+    margin-left: 20px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032800}}
+  #wrapper.arena_detail main .main_content .main_con .match_list .leader_tb.all tbody td:nth-child(4) {
+    margin-left: 67px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032804}}
+  #wrapper.arena_detail main .main_content .main_con .match_list .leader_tb.all tbody td span {
+    width: 50px;
+    display: block;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032810}}
+  #wrapper.arena_detail main .main_content .main_con .match_list .leader_tb.all tbody th {
+    height: unset;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032813}}
+  #wrapper.arena_detail main .main_content .main_con .match_list .leader_tb.all tbody th:first-child {
+    margin-left: 8px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032817}}
+  #wrapper.arena_detail main .main_content .main_con .match_list .leader_tb.all tbody th:nth-child(2) {
+    margin-left: -38px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032825}}
+  #wrapper.arena_detail main .main_content .main_con .match_list .list02 {
+    display: block;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032828}}
+  #wrapper.arena_detail main .main_content .main_con .match_list .list02 li {
+    width: 270px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032833}}
+  #wrapper.arena_detail main .main_content .main_con .match_list .list01 {
+    display: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032838}}
+  #wrapper.arena_detail main .main_content .main_con .detail_con {
+    display: flex;
+    justify-content: space-between;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032842}}
+  #wrapper.arena_detail main .main_content .main_con .detail_con .match_his {
+    width: 830px;
+    margin-right: 4.65116%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032847}}
+  #wrapper.arena_detail main .main_content .main_con .detail_con .leader_board {
+    flex: 1;
+    width: 47.09302%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032853}}
+  #wrapper.arena_detail main .main_content .main_con .detail_con .leader_board .leader_tb td:first-child {
+    width: 180px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032857}}
+  #wrapper.arena_detail main .main_content .main_con .detail_con .leader_board .leader_tb td:nth-child(2) {
+    width: 360px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032861}}
+  #wrapper.arena_detail main .main_content .main_con .detail_con .leader_board .leader_tb td:nth-child(3) {
+    width: 475px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032865}}
+  #wrapper.arena_detail main .main_content .main_con .detail_con .leader_board .leader_tb td:nth-child(4) {
+    width: 240px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032869}}
+  #wrapper.arena_detail main .main_content .main_con .detail_con .leader_board .leader_tb td:nth-child(5) {
+    width: 200px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032881}}
+  #wrapper.arena_detail.match_main .create_match {
+    display: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032886}}
+  #wrapper.arena_detail.match_main .game_list li {
+    width: 270px !important;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032895}}
+  #wrapper.arena_detail.match_main main .main_content .match_main_body .main_con .match_list {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 1650px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032909}}
+  .match_btn.fixed_btn {
+    left: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032916}}
+  .matchContent.score, .matchContent.result {
+    padding: 0 50px 80px 50px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032920}}
+  .matchContent.score .player, .matchContent.result .player {
+    text-align: left;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032923}}
+  .matchContent.score .player .player_img, .matchContent.result .player .player_img {
+    position: absolute;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032927}}
+  .matchContent.score .player .player_name, .matchContent.result .player .player_name {
+    margin: 2px 0 0 130px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032931}}
+  .matchContent.score .player .player_score, .matchContent.result .player .player_score {
+    margin-left: 130px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032937}}
+  .matchContent.score .matchVs .vs, .matchContent.result .matchVs .vs {
+    padding-top: 35px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032942}}
+  .matchContent.score .fixed_btn, .matchContent.result .fixed_btn {
+    position: relative;
+    padding-top: 120px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032949}}
+  .matchScore {
+    margin-top: 90px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032953}}
+  .matchScore.result_left .your_score {
+    float: left;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032957}}
+  .matchScore.result_left .otherInfo {
+    float: left;
+    left: 20px;
+    margin-top: 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032962}}
+  .matchScore.result_left .otherInfo + .otherInfo {
+    margin-top: 20px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032969}}
+  .nexMatch {
+    display: none;
+  }
+}
+@media screen and (max-width: 1280px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032976}}
+  .match_btn.fixed_btn {
+    left: 50px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032982}}
+  .matchHead.score {
+    height: 120px;
+  }
+}
+@media screen and (max-width: 1650px) and (max-width: 1280px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/root\/nhnst\/intern\/che_meina\/blockchain\/sass\/main\.v01\.scss}line{font-family:\000032993}}
+  .matchContent.score .fixed_btn, .matchContent.result .fixed_btn {
+    position: fixed;
+    bottom: 50px;
+    width: calc(100% - 100px);
+  }
+}

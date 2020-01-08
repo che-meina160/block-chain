@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>blockchain-lab</title>
+  <link rel="stylesheet" href="../css/main.v01.css">
+  <script src="../js/jquery-1.12.4.min.js"></script>
+  <script src="../js/countdown-circle.js"></script>
+</head>
+
+<body class="bg_match">
+  <div id="wrapper" class="match_making">
+    <header id="header"></header>
+    <script>
+      $("#header").load("common_header.html");
+    </script>
+    <main>
+      <div class="main_content">
+        <div class="matchHead score"></div>
+        <div class="matchContent score">
+          <div class="matchVs">
+            <div class="player">
+              <div class="player_img"><span><img src="../img/user.jpg" alt=""></span></div>
+              <p class="player_name">Rami Maleky</p>
+              <span class="player_score">LV. 25</span>
+            </div>
+            <div class="vs">VS</div>
+            <div class="player">
+              <div class="player_img no">
+                <span>?</span>
+              </div>
+              <p class="player_name waiting">Waiting for players...</p>
+            </div>
+          </div>
+          <div class="matchScore result_left">
+            <div class="your_score">
+              <h3>Yore Score</h3>
+              <ul class="score_list">
+                <li>
+                  <dl>
+                    <dt>Score</dt>
+                    <dd>52,300</dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt>Bonus</dt>
+                    <dd>7,080</dd>
+                  </dl>
+                </li>
+                <li class="total">
+                  <dl>
+                    <dt>Total</dt>
+                    <dd>59,380</dd>
+                  </dl>
+                </li>
+              </ul>
+            </div>
+            <div class="otherInfo newScore">
+              <span class="num">59,380</span>
+              <span class="txt">New Record!</span>
+            </div>
+            <div class="otherInfo getReward">
+              <span class="num">120 PEBL</span>
+              <span class="txt">Get Rewards!</span>
+            </div>
+          </div>
+          <div class="nexMatch fixed">
+            <div class="match_tit">
+              <h2>Your next similar match</h2>
+            </div>
+            <ul class="list_con game_list">
+              <li>
+                <a href="">
+                  <div class="game_list_head" style="background-image:url('../img/img_gametype-01.png')"></div>
+                  <div class="game_list_main">
+                    <span>2 Player</span>
+                    <p>PvP Match</p>
+                    <div class="price">
+                      <span>800</span>PEBL
+                    </div>
+                    <div class="foot">
+                      <p class="entry">ENTRY FEE<span>20 PEBL</span></p>
+                      <p class="normal">Normal</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <div class="game_list_head" style="background-image:url('../img/img_gametype-02.png')"></div>
+                  <div class="game_list_main">
+                    <span>2 Player</span>
+                    <p>Tournament</p>
+                    <div class="price">
+                      <span>800</span>PEBL
+                    </div>
+                    <div class="foot">
+                      <p class="entry">ENTRY FEE<span>20 PEBL</span></p>
+                      <p class="normal">Normal</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <div class="game_list_head" style="background-image:url('../img/img_gametype-03.png')"></div>
+                  <div class="game_list_main">
+                    <span>2 Player</span>
+                    <p>Ranking Tournament Match</p>
+                    <div class="price">
+                      <span>800</span>PEBL
+                    </div>
+                    <div class="foot">
+                      <p class="entry">ENTRY FEE<span>20 PEBL</span></p>
+                      <p class="normal">Normal</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <div class="game_list_head" style="background-image:url('../img/img_gametype-04.png')"></div>
+                  <div class="game_list_main">
+                    <span>2 Player</span>
+                    <p>PvP Match</p>
+                    <div class="price">
+                      <span>800</span>PEBL
+                    </div>
+                    <div class="foot">
+                      <p class="entry">ENTRY FEE<span>20 PEBL</span></p>
+                      <p class="normal">Normal</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="match_btn fixed_btn">
+            <a href="#" class="btn">NEXT MATCH</a>
+            <a href="" class="btn btn_gray">MATCH LIST</a>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>
