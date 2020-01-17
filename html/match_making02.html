@@ -7,6 +7,22 @@
   <link rel="stylesheet" href="../css/main.v01.css">
   <script src="../js/jquery-1.12.4.min.js"></script>
   <script src="../js/countdown-circle.js"></script>
+  <script>
+    jQuery(function ($) {
+      var startCountDown = function () {
+        setCountDown({
+          elm: $('.circle_progress'),
+          numb: 11,
+          finish: function () {
+            setTimeout(function () {
+              startCountDown();
+            }, 2000);
+          }
+        });
+      }
+      startCountDown();
+    });
+  </script>
 </head>
 
 <body>
@@ -30,12 +46,12 @@
             <p class="text">Searching for Players...</p>
             <div class="circle_progress">
               <span class="num">11</span>
-              <div class="half_right">
+              <div class="half right">
                 <div class="circle rightcircle"></div>
               </div>
-            </div>
-            <div class="half_left">
-              <div class="circle leftcircle"></div>
+              <div class="half left">
+                <div class="circle leftcircle"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -55,7 +71,7 @@
           </div>
         </div>
         <div class="match_btn fixed_btn">
-          <a href="" class="btn">RE FRESH</a>
+          <a href="" class="btn">PLAY NOW</a>
           <a href="" class="btn btn_gray">MATCH LIST</a>
         </div>
       </div>

@@ -10,24 +10,18 @@
 <style>
   p {
     padding: 0px 20px 0 40px;
-    line-height: 100px;
     font-size: 16px;
     border: 1px solid black;
-    display: inline-block;
     margin: 10px 0 0 0;
-  }
-
-  p:nth-of-type(2),
-  p:nth-of-type(3),
-  p:nth-of-type(4) {
     display: block;
+    line-height: 30px;
     width: 605px;
   }
 
-  p:nth-of-type(3),
-  p:nth-of-type(4) {
-    line-height: 30px;
-    ;
+  p:nth-of-type(1) {
+    display: inline-block;
+    line-height: 100px;
+    width: unset;
   }
 </style>
 
@@ -36,6 +30,11 @@
   <p><strong>flex:1</strong> —— 让所有弹性盒模型对象的子元素都有相同的长度，且忽略它们内部的内容</p>
   <p><strong>css中“~”是:</strong><br>p~ul选择器 p之后出现的所有ul。<br>两种元素必须拥有相同的父元素，但是 ul不必直接紧随 p。</p>
   <p><strong>css中“>”是:</strong><br>css3特有的选择器，A>B 表示选择A元素的所有子B元素。<br>与A B的区别在于，A B选择所有后代元素，而A>B只选择一代。</p>
+  <p><strong>css3中 -moz，-ms，-webkit：</strong><br>
+    -moz代表firefox浏览器私有属性<br>
+    -ms代表IE浏览器私有属性<br>
+    -webkit代表chrome，safari私有属性
+  </p>
 </body>
 
 </html>

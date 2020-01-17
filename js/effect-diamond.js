@@ -1,4 +1,4 @@
-jQuery(function($) {
+jQuery(function ($) {
   runEffect();
   lnClick();
 });
@@ -8,7 +8,7 @@ var gRight = 404;
 var gLock = false;
 
 function lnClick() {
-  $(window).click(function(e) {
+  $(window).click(function (e) {
     if (gLock) return;
 
     gRight = $(window).width() - e.pageX;
@@ -21,10 +21,10 @@ function lnClick() {
 function runEffect() {
   /*
   var pos = [
-    [100, 300, 26, 253],
-    [120, 310, 25, 251],
-    [140, 340, 24, 251],
-    [160, 330, 23, 250],
+    [100, 300, 24, 255],
+    [120, 310, 23, 254],
+    [140, 340, 22, 254],
+    [160, 330, 21, 253],
     [180, 350, 22, 250],
     [200, 370, 22, 250],
     [220, 400, 21, 250],
@@ -34,10 +34,10 @@ function runEffect() {
   ];
 
   var pos = [
-    [237, 403, 26, 253],
-    [250, 407, 25, 251],
-    [264, 399, 24, 251],
-    [261, 417, 23, 250],
+    [237, 403, 24, 255],
+    [250, 407, 23, 254],
+    [264, 399, 22, 254],
+    [261, 417, 21, 253],
     [237, 426, 22, 250],
     [285, 407, 22, 250],
     [220, 400, 21, 250],
@@ -50,10 +50,10 @@ function runEffect() {
   gLock = true;
   var dmns = $('.move_diamonds');
   var pos = [
-    [-15, -1, 26, 253],
-    [-2, 3, 25, 251],
-    [12, -5, 24, 251],
-    [9, 13, 23, 250],
+    [-15, -1, 24, 255],
+    [-2, 3, 23, 254],
+    [12, -5, 22, 254],
+    [9, 13, 21, 253],
     [-15, 22, 22, 250],
     [33, 3, 22, 250],
     [-32, -4, 21, 250],
@@ -62,10 +62,10 @@ function runEffect() {
     [28, -44, 16, 249],
   ];
 
-  dmns.each(function(i, v) {
+  dmns.each(function (i, v) {
     var p = pos[i];
-    var d = 300 + 150*i;
-    var s = 200 + 200*i;
+    var d = 300 + 150 * i;
+    var s = 200 + 200 * i;
 
     $(v).css({
       right: p[1] + gRight,
@@ -75,7 +75,10 @@ function runEffect() {
 
     $(v).animate({
       opacity: 1
-    }, { duration: 200, queue: false });
+    }, {
+      duration: 200,
+      queue: false
+    });
 
     $(v).delay(s).animate({
       right: p[3],
@@ -84,9 +87,9 @@ function runEffect() {
       easing: 'easeOutBounce',
       duration: d,
       queue: false,
-      complete: function() {
+      complete: function () {
         if (9 === i) {
-          setTimeout(function() {
+          setTimeout(function () {
             gLock = false;
           }, 500);
         }
@@ -94,6 +97,3 @@ function runEffect() {
     });
   });
 }
-
-
-
