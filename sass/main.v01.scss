@@ -1304,23 +1304,19 @@ button {
 
               &:hover,
               &.on {
-                color: #25e487;
-                border-bottom: 5px solid #25e487;
+                a {
+                  color: #25e487;
+                  border-bottom: 5px solid #25e487;
+                }
               }
 
               &+li {
                 margin-left: 30px;
               }
 
-              &.on a,
-              &:hover a {
-                color: #25e487;
-                display: block;
-              }
-
               a {
                 display: block;
-                line-height: 45px;
+                line-height: 60px;
                 font-size: 32px;
                 color: #ffffff;
                 opacity: 0.9;
@@ -3928,6 +3924,20 @@ button {
   .list_con {
     li {
       width: 288px;
+    }
+  }
+
+  #wrapper {
+    main {
+      .main_content {
+        .recently_played {
+          .game_list {
+            li {
+              width: 287px;
+            }
+          }
+        }
+      }
     }
   }
 }
